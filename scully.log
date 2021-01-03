@@ -517,3 +517,2239 @@ The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin d
 The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
 The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
 The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200120_emmet_abbreviations"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200120_emmet_abbreviations"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200319_npm_scripts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200319_npm_scripts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200509_upgrade_linux"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200509_upgrade_linux"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200226_python_type_checking_with_voluptous"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200226_python_type_checking_with_voluptous"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200730_quick_tips"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200730_quick_tips"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200809_docker_intro"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200809_docker_intro"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200813_math_markdown"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200813_math_markdown"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200824_day_of_the_week"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200824_day_of_the_week"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201104_angular_cheatsheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201104_angular_cheatsheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201113_angular_material"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201113_angular_material"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201109_angular_concepts"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201109_angular_concepts"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201116_python_basic_app"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201116_python_basic_app"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/___UNPUBLISHED___kjgnprtk_pTutXUsCLiKjxPNPqqIEDmnm1B1ZUPYD"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20201228_angular_pipes"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20201228_angular_pipes"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_api_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_api_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_git"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_git"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_markdown_documentation"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_markdown_documentation"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_hacktoberfest"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_hacktoberfest"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20190905_virtualenv"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20190905_virtualenv"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191109_blogging-advantages"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191109_blogging-advantages"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191115_what_did_i_do"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191115_what_did_i_do"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191208_virtual_environments"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191208_virtual_environments"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191130_the_resourceful_programmer"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191130_the_resourceful_programmer"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191120_switch_statement_python"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191120_switch_statement_python"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191214_netlify"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191214_netlify"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+Received Kill command
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "npm run scully -- --scanRoutes"
+----------------------------------The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20191220_c_try_catch"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20191220_c_try_catch"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200102_automated_startup"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200102_automated_startup"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200112_logging_in_powershell"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200112_logging_in_powershell"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+
+      ----------------
+      Error, missing "<scully-content>" in route "/blog/20200119_git_cheat_sheet"
+      without <scully-content> we can not render this route.
+      Make sure it is in there, and not inside any conditionals (*ngIf)
+      You can check this by opening "http://localhost:4200/blog/20200119_git_cheat_sheet"
+      when you serve your app with ng serve and then in the browsers console run:
+      document.querySelector('scully-content')
+      ----------------
+      
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+The file ./blog/20191214_theres_more.gif has extension .gif that has no plugin defined, scully will skip this file.
+Received Kill command
