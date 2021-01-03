@@ -6,7 +6,7 @@ author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20201104_angular_cheat_sheet.png'
 tagline: "Great idea to quickly transform text"
-unpublished: False
+published: True
 tags:
 - Angular
 - Angular Material
