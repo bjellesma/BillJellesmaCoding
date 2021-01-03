@@ -1,0 +1,8 @@
+<div class="container">
+    <div *ngIf="$blogPostMetadata | async as blogPost">
+        <h1>{{blogPost.title}}</h1><br>
+        <small>by {{blogPost.author}}</small><br>
+        <i>{{blogPost.date}}</i>
+    </div>
+    <scully-content></scully-content>
+</div>

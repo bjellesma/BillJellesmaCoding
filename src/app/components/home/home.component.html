@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Latest Posts - hello</h1>
+  <mat-card  *ngFor="let page of routes$ | async" class="example-card">
+    <mat-card-header>
+      <img mat-card-avatar src={{page.authorImage}} alt={{page.author}} />
+      <mat-card-title>{{page.title}}</mat-card-title>
+      <mat-card-subtitle>{{page.tagline}}</mat-card-subtitle>
+    </mat-card-header>
+    <a routerLink={{page.route}}>
+      <img mat-card-image src={{page.image}} alt="Photo of a Shiba Inu" class="thumbnail">
+    </a>
+    <mat-card-content>
+      <p>
+        {{page | json}}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
