@@ -5,7 +5,6 @@ import { isPlatformBrowser } from '@angular/common';
 
 import 'clipboard';
 import 'prismjs';
-
 import 'prismjs/plugins/toolbar/prism-toolbar';
 import 'prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard';
 import 'prismjs/plugins/show-language/prism-show-language';

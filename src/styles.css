@@ -5,7 +5,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    /* TODO: Create theme with background color and color */
+    background-color: #15202B;
+    color:#fff;
+    margin: 0; 
+    font-family: Roboto, 
+    "Helvetica Neue", sans-serif; 
+}
 div.code-toolbar > .toolbar {
 	/* Set the opacity as 1 so that it's always shown */
 	opacity: 1;

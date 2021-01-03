@@ -8,11 +8,16 @@
     width:400px;
     height:180px;
 }
-.example-card {
-    max-width: 100%;
-  }
-  
-  .example-header-image {
-    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-    background-size: cover;
-  }
+.postcard {
+  /* TODO: Create theme with background color and color */
+  background-color: #192734;
+  color:#eeeeee;
+  border:1px solid #164D56;
+  max-width: 100%;
+}
+.post-header {
+  padding-bottom:5px;
+}
+.post-subtitle {
+  color: #eeeeee;
+}
