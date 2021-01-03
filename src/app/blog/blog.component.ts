@@ -1,8 +1,9 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {ActivatedRoute, Router, ROUTES} from '@angular/router';
+import {Component, OnInit, ViewEncapsulation, AfterViewChecked} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 import { ScullyRoutesService } from '@scullyio/ng-lib';
 import {combineLatest} from 'rxjs'
 import { map, pluck } from 'rxjs/operators';
+import {SyntaxHighlightService} from '../services/syntax-highlight.service'
 
 declare var ng: any;
 
@@ -18,14 +19,21 @@ export class BlogComponent implements OnInit {
   activatedRoute: any;
   
   ngOnInit() {}
+  // combineLatest will get the latest values emitted from the available$ observable and the slug property
   $blogPostMetadata = combineLatest([
+    //pluck will extract the 'slug' property from route
     this.route.params.pipe(pluck('slug')),
     this.scully.available$
   ]).pipe(
+    //rxjs map will then filter so that the route matches /blog/:slug so that we turn that in blogPostMetaData$
     map(([slug, routes]) =>
       routes.find(route => route.route === `/blog/${slug}`)
     )
   );
-  constructor(private scully: ScullyRoutesService, private router: Router, private route: ActivatedRoute) {
+  //use prism highlighting for syntax highlighter
+  ngAfterViewChecked() {
+    this.highlight.highlightAll();
+  }
+  constructor(private scully: ScullyRoutesService, private route: ActivatedRoute, private highlight: SyntaxHighlightService) {
   }
 }

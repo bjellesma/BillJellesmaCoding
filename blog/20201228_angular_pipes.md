@@ -33,7 +33,7 @@ In this short tutorial, we'll just create a custom pipe that will transform some
 
 And below is the corresponding component class
 
-```js
+```typescript
 import { Component, OnInit} from '@angular/core';
 
 export interface PeriodicElement {

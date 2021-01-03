@@ -1,6 +1,6 @@
 <div class="container">
     <div *ngIf="$blogPostMetadata | async as blogPost">
-        <h1>{{blogPost.title}}</h1><br>
+        <h1>{{blogPost.title}}</h1>
         <small>by {{blogPost.author}}</small><br>
         <i>{{blogPost.date}}</i>
     </div>

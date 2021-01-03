@@ -1,4 +1,12 @@
+/* include CSS for prism toolbar */
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+/* check node_modules/prismjs/themes/ for the available themes */
+@import '~prismjs/themes/prism-dark';
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+div.code-toolbar > .toolbar {
+	/* Set the opacity as 1 so that it's always shown */
+	opacity: 1;
+}
