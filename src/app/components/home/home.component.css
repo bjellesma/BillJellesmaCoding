@@ -2,12 +2,7 @@
     margin:0 auto;
     width: 80%;
 }
-.thumbnail {
-    object-fit:cover;
-    display: block;
-    width:400px;
-    height:180px;
-}
+
 .postcard {
   /* TODO: Create theme with background color and color */
   background-color: #192734;
@@ -20,4 +15,11 @@
 }
 .post-subtitle {
   color: #eeeeee;
+}
+.post-thumbnail {
+  object-fit:cover;
+  display: block;
+  width:400px;
+  height:180px;
+  margin-left:5px;
 }
