@@ -2,7 +2,7 @@ import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
   projectRoot: "./src",
   projectName: "billjellesmacoding-angular",
-  outDir: './dist/static',
+  outDir: './dist/billjellesmacoding-angular',
   routes: {
     '/blog/:slug': {
       type: 'contentFolder',
