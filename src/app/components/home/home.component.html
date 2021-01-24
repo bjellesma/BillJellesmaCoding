@@ -6,7 +6,7 @@
           <mat-card-title>{{page.title}}</mat-card-title>
           <mat-card-subtitle class="post-subtitle">Author: {{page.author}} | Updated at: {{page.date}}</mat-card-subtitle>
         </mat-card-header>
-          <a routerLink={{page.route}}>
+          <a routerLink="{{page.route}}/">
             <img mat-card-image class="post-thumbnail" src={{page.image}} alt={{page.title}}>
         </a>
         <mat-card-content>
