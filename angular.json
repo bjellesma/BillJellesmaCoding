@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "billjellesmacoding-angular": {
+    "BillJellesmaCoding": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/billjellesmacoding-angular",
+            "outputPath": "dist/BillJellesmaCoding",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "billjellesmacoding-angular:build"
+            "browserTarget": "BillJellesmaCoding:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "billjellesmacoding-angular:build:production"
+              "browserTarget": "BillJellesmaCoding:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "billjellesmacoding-angular:build"
+            "browserTarget": "BillJellesmaCoding:build"
           }
         },
         "test": {
@@ -112,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "billjellesmacoding-angular:serve"
+            "devServerTarget": "BillJellesmaCoding:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "billjellesmacoding-angular:serve:production"
+              "devServerTarget": "BillJellesmaCoding:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "billjellesmacoding-angular"
+  "defaultProject": "BillJellesmaCoding"
 }

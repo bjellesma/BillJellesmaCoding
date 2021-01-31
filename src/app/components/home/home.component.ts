@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     map(routeList => {
       return routeList.filter((route: ScullyRoute) => route.route.startsWith(`/blog/`))
     }),
-    map(blogs => blogs.sort((a, b) => (a.date > b.date ? -1 : 1)))
+    map(blogs => blogs.sort((a, b) => (a.updateTime > b.updateTime ? -1 : 1)))
   );
   routes$: Observable<ScullyRoute[]> = this.blogs$
   

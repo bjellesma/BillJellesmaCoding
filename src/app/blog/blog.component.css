@@ -6,3 +6,7 @@
 .blog-title {
     border-bottom:1px solid #164D56;
 }
+a {
+    color:whitesmoke;
+    font-weight:bold;
+}

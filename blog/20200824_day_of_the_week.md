@@ -1,7 +1,7 @@
 ---
 title: 'Finding the day of the week given any date'
 date: '2020-08-29 20:45:00'
-updateTime: '2020-08-29 20:45:00'
+updateTime: '2021-01-30 20:45:00'
 author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20200828_day_of_week.jpg'
@@ -12,6 +12,10 @@ tags:
 - Markdown
 - Python
 ---
+
+## Updates
+
+* 20210130 - I'm on the hunt currently for a katex plugin for Scully, so all rendered equations are images.
 
 ## Intro
 
@@ -29,9 +33,7 @@ This is a fun little formula to model with a script.
 
 The General formula to figure out the day of week for any given date is the following:
 
-$$
-\text{Day Code} = \text{Date Code} + \text{Month Code} + \text{Year Code}
-$$
+![Katex Equation](../../assets/images/math/20200824-1.png)
 
 This is **always** the formula for any date. ANY date. Leave your vector calculus textbooks at home because we're not going anywhere past arithmetic. In python code, it would look like this:
 
@@ -43,17 +45,13 @@ day_of_the_week = date_code + month_code + year_code
 
 **However** it will also be useful to know one other piece of arithmetic not usually taught in schools, modular arithmetic. **Modular Arithmetic** just refers to the remainder when dividing. Most schools, when they first teach division will ask you problems like $8 / 4$ or $10 / 2$ and then hit you with a curveball like $10 / 3$. When presented with $10 / 3$, we just say that this result is 3 with a remainder of 1, or we have 3 groups of 3 and 1 extra. Modular Arithmetic is instead **only** interested in the remainder and uses an abbreviated mod instead of the division sign. So, 
 
-$$
-10 \mod 3 = 1 
-$$ 
+![Katex Equation](../../assets/images/math/20200824-2.png)
 
 Modular arithmetic is usually associated with cryptography and similar applications but the idea of it is very simple to grasp. For those interested, khan academy has a [more in depth description](https://www.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/what-is-modular-arithmetic).
 
 The reason that this arithmetic is useful is because our day code can easily come out to more than 7. In that case, we'll reduce the by as many multiples of 7 as we can to translate the day code to a day of the week. For example, let's say that when all is said and done, the day code comes out to 36. The following is the little equation that we'd do:
 
-$$
-36 \mod 7 = 1
-$$
+![Katex Equation](../../assets/images/math/20200824-3.png)
 
 What we did is find the nearest multiple of 7, 35 and reduce 36 by that amount to 1. Here's a table showing the first 10 multiples of 7 as a reminder:
 
@@ -193,19 +191,13 @@ Easy right? Ok, let's use this knowledge to go ahead and calculate a date. Let's
 
 Now, let's add all of these numbers.
 
-$$
-\text{Day Code} = \text{Date Code} + \text{Month Code} + \text{Year Code}
-\\= 25 + 1 + 1
-\\= 27
-$$
+![Katex Equation](../../assets/images/math/20200824-4.png)
 
 Sweet! So we have the day code as 27, now for the final step.
 
 The final step is to use the modulus operator again to find the remainder after dividing by 7.
 
-$$
-27 \mod 7 = 6
-$$ 
+![Katex Equation](../../assets/images/math/20200824-5.png)
 
 Remember, we're really just subtracting the rounded down nearest multiple of 7. The nearest multiple of 7 is 21 (even though 28 is closer to 27, we want to make this like shuffleboard and not go over). If we subtract 21 from 27, we get 6.
 
@@ -314,17 +306,11 @@ The date of August 25, 2001 is/was Saturday
 
 Calculating the day of the week for January 25, 2000 is a leap year so remember that we have an exception for the month code on leap years. The mnemonic that we normally use for January is winter has 6 letters therefore January is 6. The leap year exception is that we subtract 1 from January and February. We find that the month code for January 2000 is 5. We also find that the date code is 25 and the year code is 0 because 2000 - 2000 is zero.
 
-$$
-\text{Day Code} = \text{Date Code} + \text{Month Code} + \text{Year Code}
-\\= 25 + 5 + 0
-\\= 30
-$$
+![Katex Equation](../../assets/images/math/20200824-6.png)
 
 Remembering that the nearest multiple of 7 to 30 is 28
 
-$$
-30 \mod 7 = 2
-$$ 
+![Katex Equation](../../assets/images/math/20200824-7.png)
 
 Using the day of the week table, we find that the day of the week is Tuesday. We can also verify this in our script if we use the date in the year, month, and day_of_month variables.
 
@@ -415,10 +401,7 @@ The double division sign (//) operator ensures that year code comes out to a who
 
 Now we can introduce the general formula for 21st century year codes. This formula will also be used later to get dates in other centuries.
 
-$$
-\text{Year Code} = (\text{Previous 12 yr code} + \text{Number of years since last 12 year cycle}
-\\+ \text{Number of leap years since last 12 year cycle}) \mod 7
-$$
+![Katex Equation](../../assets/images/math/20200824-8.png)
 
 Let's walk through getting the year code for 2055
 1. The last 12 year cycle is 2048 and 48/12=4
@@ -430,13 +413,7 @@ Let's walk through getting the year code for 2055
 
 Putting this into mathematical language,
 
-$$
-\text{Year Code} = (\text{Last 12 yr code} + \text{Number of years since last 12 year cycle} 
-\\+ \text{Number of leap years since last 12 year cycle}) \mod 7
-\\=(4+7+1) \mod 7
-\\=12 \mod 7
-\\=5
-$$
+![Katex Equation](../../assets/images/math/20200824-9.png)
 
 To model this in python, I've chosen to get the components individuly and then did mod 7 at the end. To get the number of leap years since the last cycle, I'm using whole integer division again. And the find the years since the last cycle, I'm using the modulus operator to divide by 12 and take the remainder.
 
@@ -450,12 +427,7 @@ year_code = (previous_12_year + years_since_cycle + num_leap_years) % 7
 
 Now, say we were doing February 12, 2055, we have
 
-$$
-\text{Day Code} = \text{Date Code} + \text{Month Code} + \text{Year Code} \mod 7
-\\= (12 + 2 + 5) \mod 7
-\\= 19 \mod 7
-\\=5
-$$
+![Katex Equation](../../assets/images/math/20200824-10.png)
 
 5 translates to Friday!
 
@@ -540,23 +512,11 @@ Let's walk through my birthday, October 28, 1991.
 
 Let's put this in some quick mathematical language too. First, we'll get the year code
 
-$$
-\text{Year Code} = ((\text{Last 12 yr code} + \text{Number of years since last 12 year cycle} 
-\\+ \text{Number of leap years since last 12 year cycle}) \mod 7) + \text{Century Code}
-\\=((7+7+1) \mod 7) + 1
-\\=(52 \mod 7)+1
-\\=1+1
-\\=2
-$$
+![Katex Equation](../../assets/images/math/20200824-11.png)
 
 Now for the general formula
 
-$$
-\text{Day Code} = \text{Date Code} + \text{Month Code} + \text{Year Code} \mod 7
-\\= (28 + 6 + 2) \mod 7
-\\= 36 \mod 7
-\\=1
-$$
+![Katex Equation](../../assets/images/math/20200824-12.png)
 
 The math-speak also gives us Monday!
 

@@ -1,7 +1,7 @@
 ---
 title: 'Using Math in Markdown'
 date: '2020-08-14 20:45:00'
-updateTime: '2020-08-14 20:45:00'
+updateTime: '2021-01-30 20:45:00'
 author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20200814_math_in_markdown.jpg'
@@ -11,6 +11,10 @@ tags:
 - Math
 - Markdown
 ---
+
+## Updates
+
+* 20210130 - I'm on the hunt currently for a katex plugin for Scully, so all rendered equations are images.
 
 ## TL;DR
 
@@ -27,15 +31,13 @@ Have you ever been in a position where you're looking to translate the square ro
 
 Here is the LaTeX syntax for the quadratic formula:
 
-```
+```latex
 \text{x} = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
 ```
 
 And it will display as
 
-$$
-\text{x} = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
-$$
+![Katex Equation](../../assets/images/math/20200813-1.png)
 
 * `\text{}` will translate anything inside of the curly brackets as plain text
 * `\frac{}{}` will translate the first set of curly braces as the numerator and the second set as the denominator
@@ -73,9 +75,7 @@ Those of you that have ready my previous posts will know the platform that I blo
 
 Gatsby does have such a plugin called [gatsby-remark-katex](https://www.gatsbyjs.com/plugins/gatsby-remark-katex/). KaTeX (as you might have guessed by the name) is related to LaTeX in that it uses most of the same language while not using the full LaTeX infrastructure so that it can be rendered on the web. I'm using this plugin right now on my blog to render some math such as the quadratic formula from earlier.
 
-$$
-\text{x} = \frac{-b\pm \sqrt{b^2-4ac}}{2a}
-$$
+![Katex Equation](../../assets/images/math/20200813-2.png)
 
 Setting up this plugin on a Gatsby blog is relatively simple
 
@@ -150,10 +150,7 @@ class BlogPostRoute extends React.Component {
         return (
           <span key={tag}>
             <Link to={tag}>{post.frontmatter.tags[i]}</Link>
-            {divider}
-          </span>
-        )
-      })
+            {divider}10130
       tagsSection = (
         <span
           css={{
@@ -229,9 +226,7 @@ class BlogPostRoute extends React.Component {
                 color: styles.colors.light,
                 ...scale(-1 / 5),
               }}
-            >
-              <small
-                css={{
+            >00813
                   fontWeight: `bold`,
                   color: styles.colors.text,
                   textTransform: `uppercase`,
@@ -275,7 +270,7 @@ export const pageQuery = graphql`
                 }
               }
             }
-          }
+          }00813
         }
       }
     }

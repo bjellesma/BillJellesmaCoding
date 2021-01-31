@@ -14,6 +14,8 @@ import 'prismjs/components/prism-javascript';
 import 'prismjs/components/prism-json';
 import 'prismjs/components/prism-markup';
 import 'prismjs/components/prism-typescript';
+import 'prismjs/components/prism-python';
+import 'prismjs/components/prism-latex';
 // ... probably more, check out node_modules/prismjs/components
 
 declare var Prism: any;
