@@ -1,10 +1,9 @@
 <div class="container">
-  <h1>Latest Posts</h1>
     <mat-card  *ngFor="let page of routes$ | async" class="postcard">
         <mat-card-header class="post-header">
           <img mat-card-avatar src={{page.authorImage}} alt={{page.author}} />
           <mat-card-title>{{page.title}}</mat-card-title>
-          <mat-card-subtitle class="post-subtitle">Author: {{page.author}} | Updated at: {{page.date}}</mat-card-subtitle>
+          <mat-card-subtitle class="post-subtitle">Author: {{page.author}} | Updated at: {{page.updateTime}}</mat-card-subtitle>
         </mat-card-header>
           <a routerLink="{{page.route}}/">
             <img mat-card-image class="post-thumbnail" src={{page.image}} alt={{page.title}}>
