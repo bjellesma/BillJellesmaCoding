@@ -1,27 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {Apollo, gql} from 'apollo-angular';
+import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'exchange-rates',
-  template: `
-    <div *ngIf="loading">
-      Loading...
-    </div>
-    <div *ngIf="error">
-      Error :(
-    </div>
-    <div *ngIf="rates">
-      <div *ngFor="let rate of rates">
-        <p>{{ rate.currency }}: {{ rate.rate }}</p>
-      </div>
-    </div>
-  `,
+  selector: 'app-graphql-test',
+  templateUrl: './graphql-test.component.html',
+  styleUrls: ['./graphql-test.component.css']
 })
 export class GraphQLComponent implements OnInit {
-  rates: any[];
+  authorName = ''
   loading = true;
   error: any;
-
+  private querySubscription: Subscription;
   constructor(private apollo: Apollo) {}
 
   ngOnInit() {
@@ -29,17 +19,19 @@ export class GraphQLComponent implements OnInit {
       .watchQuery({
         query: gql`
           {
-            rates(currency: "USD") {
-              currency
-              rate
+            author{
+              fullName
             }
-          }
-        `,
+          }`,
       })
-      .valueChanges.subscribe((result: any) => {
-        this.rates = result?.data?.rates;
-        this.loading = result.loading;
-        this.error = result.error;
+      .valueChanges.subscribe(({data, loading}) => {
+        this.loading = loading;
+        // this.authorName = data?.author.fullName;
+        // console.log(`resourse loaded: ${JSON.stringify(data)}`)
       });
+  }
+
+  ngOnDestroy() {
+    this.querySubscription.unsubscribe();
   }
 }

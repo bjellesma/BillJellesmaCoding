@@ -33,6 +33,7 @@
     "apollo": "^2.32.1",
     "apollo-angular": "^2.2.0",
     "apollo-server-lambda": "^2.19.1",
+    "axios": "^0.21.1",
     "graphql": "^15.4.0",
     "netlify-lambda": "^2.0.2",
     "prismjs": "^1.23.0",
