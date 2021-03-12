@@ -12,6 +12,7 @@ tags:
 
 # Edits
 
+
 * September 15, 2020 [API Validation with Voluptuous](#api-validation)
 
 # Intro

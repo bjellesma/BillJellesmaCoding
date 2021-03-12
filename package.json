@@ -9,10 +9,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "scully": "scully",
-    "scully:serve": "scully serve",
-    "scully:watch": "npm run scully -- --watch",
-    "lambda-serve": "netlify-lambda serve functions",
-    "lambda-build": "netlify-lambda build functions"
+    "scully:serve": "npx scully serve --",
+    "scully:watch": "npm run scully -- --watch"
   },
   "private": true,
   "dependencies": {
