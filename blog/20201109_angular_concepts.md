@@ -1,7 +1,7 @@
 ---
 title: 'Angular Concepts'
 date: '2020-11-10 20:45:00'
-updateTime: '2020-11-13 00:30:00'
+updateTime: '2021-03-21 14:30:00'
 author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20201104_angular_cheat_sheet.png'
@@ -13,17 +13,22 @@ tags:
 
 ## Table of Contents
 
-* [Components](#components)
-* [Interfaces](#interfaces)
-* [Pipes](#pipes)
-* [Two Way Binding](#binding)
-* [ngFor and ngIf](#ngfor)
-* [Private Styles and Class Binding](#styles)
-* [Event Binding](#event-binding)
-* [Input](#input)
-* [Services](#services)
-* [Routers](#routers)
-* [HTTP](#http)
+* [Components](blog/20201109_angular_concepts#components)
+  * [String Interpolation](blog/20201109_angular_concepts#interpolation)
+  * [ngNonBindable](blog/20201109_angular_concepts#ngNonBindable)
+  * [Template Reference Vaiabled](blog/20201109_angular_concepts#template-reference-variables)
+* [Interfaces](blog/20201109_angular_concepts#interfaces)
+* [Pipes](blog/20201109_angular_concepts#pipes)
+* [Two Way Binding](blog/20201109_angular_concepts#binding)
+* [Class and Style Binding](blog/20201109_angular_concepts#class-style-binding)
+* [ngClass and ngStyle](blog/20201109_angular_concepts#ngClass-ngStyle)
+* [ngForm and Form Validation](blog/20201109_angular_concepts#ngForm)
+* [ngFor and ngIf](blog/20201109_angular_concepts#ngfor)
+* [Event Binding](blog/20201109_angular_concepts#event-binding)
+* [Input](blog/20201109_angular_concepts#input)
+* [Services](blog/20201109_angular_concepts#services)
+* [Routers](blog/20201109_angular_concepts#routers)
+* [HTTP](blog/20201109_angular_concepts#http)
 
 A fond memory of mine is coming how from school and making flash cards until I was too tired to make anymore. That being said, I'm sure the memory was more painful than I remember. Well, I figured that I'd need to upgrade my process for the new age so here we go.
 
@@ -53,11 +58,25 @@ A **Component** is Fundamental building blocks of Angular applications. They dis
 
 *2nd Sidenote*: When a component becomes large and serves multiple purposes, you should consider refactoring that one component into two or more components. Taking from the Angular tour of heroes example, the heroes component eventually contains both a list of heroes and then a toggleable details section for the heroes. Since the component is now serving more than one purpose, hosting the list and details, it is recommended that you seperate this into a hero component and a hero-detail component. This has the advantage that the detail is reusable so that you can use it on different parts of the app and is more maintainable as you know that working on the detail component will only affect the detail component.
 
+### <a href="interpolation">String Interpolation</a>
+
 **Interpolation Binding** - This is the double curly braces that appear in a component's template. These are defined in the component's typescript file and sent to the template. For example
 
 ```html
 <h1>{{title}}</h1>
 ```
+
+### <a href="ngnonbindable">ngNonBindable</a>
+
+If, for some reason, you don't want the string interpolation to work, you can use **ngNonBindable** 
+
+```html
+<li *ngIf="user.registered" class="list-group-item" ngNonBindable>Registered: {{user.registered | date:'MM/dd/yyyy'}}</li>
+```
+
+This might be useful if you want to create code in a blog post or something thing like that.
+
+### <a href="template-reference-variables">Template Reference Variables</a>
 
 In addition to Interpolation Binding, you can also use **Template Reference** variables to create variables directly in the templates.
 
@@ -92,6 +111,16 @@ An interface is like a blueprint to explain the type that a javascript object sh
 export interface Hero {
   id: number;
   name: string;
+}
+```
+
+`id` and `name` will be required fields whenever we're typing a `Hero` object as below. You can also include an optional field using a question mark before defining the type.
+
+```js
+export interface Hero {
+  id: number;
+  name: string;
+  age?: number
 }
 ```
 
@@ -183,6 +212,150 @@ Now, whenever we type a new name in the textbox. The displayed name above that w
 
 ![Two Way Data Binding](../../assets/images/20201111_angular_concepts/two-way-binding.gif)
 
+This could also come in handy when creating a form
+
+```html
+<input [(ngModel)]="user.firstName" type="text" class="form-control" name="firstName">
+```
+
+Now when we click the submit button, we'll have the variable available to us
+
+```html
+<button (click)="addUser({firstName: user.firstName, isActive: true})" [disabled]="!enableAdd" class="btn btn-block mb-3" [ngClass]="currentClasses">Add New User</button>
+```
+
+## <a name="class-style-binding">Class and Style Binding</a>
+
+Similar to ngClass and class binding, you can also use style binding
+
+```html
+<li class="card card-body mb-2" *ngFor="let user of users" [class.bg-light]="user.isActive" [style.border-color]="user.isActive ? 'green' : ''">
+```
+
+So Bg-light is assigned as a class only if user.isActive evaluates to true. Similarly, the `border-color` style is set to green if `user.isActive` evaluates to true and sets nothing to that style if false.
+
+## <a name="ngClass-ngStyle">ngClass and ngStyle</a>
+
+To take class and style binding a step further and set class and style on a tag using an object, you can use `ngClass` and `ngStyle` respectively. 
+
+```html
+<button [disabled]="!enableAdd" class="btn btn-block mb-3" [ngClass]="currentClasses">Add New User</button>
+```
+
+In our typescript component, we'll use `currentClasses` as an object that you can set with a method call. ngClass will then bind the class `btn-success` to the element if `this.enableAdd` (a component property) evaluates to true. 
+
+```ts
+setCurrentClasses(){
+        this.currentClasses = {
+            'btn-success': this.enableAdd
+        }
+    }
+```
+
+The advantage with this approach is that you can set multiple classes that all have their own associated booleans
+
+```ts
+setCurrentClasses(){
+        this.currentClasses = {
+            'btn-success': this.enableAdd,
+            'big-text': this.loaded
+        }
+    }
+```
+
+Similar logic applies to ngClass. 
+
+```html
+<button [disabled]="!enableAdd" class="btn btn-block mb-3" [ngStyle]="currentStyles">Add New User</button>
+```
+
+```ts
+setCurrentStyles(){
+        this.currentStyles = {
+            'bg-light': this.enableAdd,
+            'mb-3': this.loaded
+        }
+    }
+```
+
+## <a name="ngform">ngForm and Form Validation</a>
+
+ngForm is a directive included in the Angular Forms Module that will provide easier submission and validation. Take the following form for example:
+
+```html
+<form #userForm="ngForm">
+            <div class="form-group">
+                <label>First Name</label>
+                <!-- is-invalid and invalid-feedback are bootstrap UI classes -->
+                <input [(ngModel)]="user.firstName" type="text" class="form-control" [ngClass]="{'is-invalid': userFirstName.errors && userFirstName.touched}" name="firstName" #userFirstName="ngModel" required minlength="2">
+                <div class="invalid-feedback">First name required</div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input [(ngModel)]="user.email" type="text" class="form-control" name="email">
+            </div>
+            <button [disabled]="!userForm.form.valid" class="btn btn-block mb-3" [ngClass]="currentClasses">Add New User</button>
+        </form>
+```
+
+Notice that we're declaring a template variable called `#userForm` that we're setting equal to `ngForm`.
+
+Now, notice that our username input field has the `required` and `minlength=2` attributes. The button to submit the form at the bottom has a property binding that will set disabled to true if the `userForm.form.valid` variable is set to false. This variable will be set to false unless that required and `minlength=2` attributes pass the validation.  
+
+The ngSubmit event is just like a regular submit event except that `event.preventdefault()` is set automatically to prevent a submit event on the user experience.
+
+```html
+<input [(ngModel)]="user.firstName" type="text" class="form-control" [ngClass]="{'is-invalid': userFirstName.errors && userFirstName.touched}" name="firstName" #userFirstName="ngModel" required minlength="2">
+```
+
+Notice in the firstName input that we're also creating a template variable called #userFirstName. Now, we can access certain variables of this element on the tag itself. For example, we're using `[ngClass]` to set the bootstrap `is-invalid` class. `is-invalid` is just a special class in bootstrap that will highlight the field in red.
+
+```html
+<div class="invalid-feedback" [hidden]="!userFirstName.errors?.required">First name required</div>
+<div class="invalid-feedback" [hidden]="!userFirstName.errors?.minlength">Must be at least two characters</div>
+```
+
+We can also use these template variables to give a hidden attribute to these tags based on if a certain validation attribute is violated. Again `invalid-feedback` is a bootstrap class that is designed to appear with its corresponding `is-invalid` class.
+
+![Form Validation](../../assets/images/20201111_angular_concepts/form-validation.gif)
+
+Now, to actually submit the form, we'll want to use event binding on the form tag to an event called `ngSubmit` and pass in the form template variable. `ngSubmit` is an event just like a regular submit event except that the event doesn't cause a submit event on the browser causing the page to refresh (this is typically done by calling `event.preventdefault()`, `ngSubmit` will just include this statement automatically).
+
+```html
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+```
+
+In the component typescript, we'll want to add an import for `ViewChild`. `ViewChild` is a decorator that will give us access to child component properties. In our case, we'll be giving access to the form.
+
+```ts
+import {Component, ViewChild} from '@angular/core';
+```
+
+and then we'll want to create a property called `form` with the `ViewChild` decorator. The `ViewChild` Decorator will also take the name of the template variable.
+
+```ts
+export class UserComponent {
+    ...
+    @ViewChild('userForm') form: any;
+    ...
+```
+
+We can now create an `onSubmit` method which will take an object with the value and the valid status. Notice that because it's typescript, we're able to ensure the types of value and valid. Our method will simply check if the form is valid (this can act as another layer of checking if we're also using form validation) and push the value onto the array if the valid check passes. Lastly, we'll access the form object set with the `ViewChild` decorator to reset the form.
+
+```ts
+onSubmit({value, valid}: {value: object, valid: boolean}){
+        // if validation is not passed
+        if(!valid){
+            console.log('Form is not valid')
+        }else{
+          // if valid passes, we'll push them onto the array
+            this.myArray.push(value)
+            //reset the form
+            this.form.reset();
+        }
+    }
+```
+
 ## <a name="ngfor">ngFor and ngIf</a>
 
 A useful feature for any framework is to be able to loop through an object. In Angular, we can accomplish this with an **ngFor**, angular's **repeater** directive. This is a directive that, when attached to an element, will repeat the element for the entire list. Using angular's tour of heroes app again, let's define a list called `heroes` inside `heroes.component.ts` inside of the class.
@@ -224,32 +397,28 @@ We can then iterate over this list in `heroes.component.html` by attaching `*ngF
 The ngIf directive is similar to ngFor in that it brings a dynamic programming like construct to template files. **ngIf** can be used to display a certain element or even a whole section only if the condition is true. For example, if we have a div element in our html that we only want to display if the `selected` element is equal to 3, we would use the following
 
 ```html
-<div *ngIf="selected == 3">
+<div *ngIf="selected == 3; else notSelected">
   <p>Hello World</p>
 </div>
 ```
 
 Then the div element and its child paragraph element would only be shown if selected is equal to 3.
 
-## <a name="styles">Private Styles and Class Binding</a>
-
-When you use the CLI to generate a component, heroes, angular also generates a css file, `heroes.component.css`. This stylesheet has what's referred to as **private styles** because those styles only apply to that component. For example, if in `heroes.component.css` we define
-
-```css
-.container {
-  background:blue;
-}
-```
-
-The style for the container class will not apply if you have another container class defined in another component, `villians.component.html`
-
-**Class Binding** will allow you to attach a class to an element dynamically if and only if a certain condition is met. Think of class binding as being similar to ngIf defined above in that it takes an action only if a certain condition is met. For example, the below element will only use the active class if selected is equal to 3.
+We've also used an else statement to refer to `notSelected`. This will be a template variable that we'll set with `ng-template`
 
 ```html
-<li [class.active]="selected == 3">
+<ng-template #notSelected>Not Selected</ng-template>
 ```
 
-Notice the syntax is to add [] around this directive and include the word class. This is to distinguish class binding from style and attritute binding. You can read more about class, style, and attribute binding by visiting [https://angular.io/guide/attribute-binding#class-binding](https://angular.io/guide/attribute-binding#class-binding)
+This can come in handy if you want to display a list of users but then display separate content if no users are found.
+
+```html
+<ul *ngIf="users; else noUsers">
+  <li *ngFor="let user of users">{{user}}</li>
+</ul>
+
+<ng-template #noUsers>Sorry, there are no users to display</ng-template>
+```
 
 ## <a name="event-binding">Event Binding</a>
 
@@ -480,9 +649,15 @@ getHeroes(): Observable<object[]> {
 ```
 
 ```js
-private handleError<T>(operation = 'operation', result?: T) {
-  return (error: any): Observable<T> => {
+private handleError<T>(operation = 'operation', r# ngForm
 
+ngForm is a directive that will automatically submit the form
+
+```html
+<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
+
+ngSubmit is similar to regular submit but it always does e.preventdefault
+```
     // TODO: send the error to remote logging infrastructure
     console.error(error); // log to console instead
 

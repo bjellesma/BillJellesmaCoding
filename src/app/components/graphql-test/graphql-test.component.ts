@@ -26,7 +26,7 @@ export class GraphQLComponent implements OnInit {
       })
       .valueChanges.subscribe(({data, loading}) => {
         this.loading = loading;
-        // this.authorName = data?.author.fullName;
+        //this.authorName = data?.author.fullName;
         // console.log(`resourse loaded: ${JSON.stringify(data)}`)
       });
   }
