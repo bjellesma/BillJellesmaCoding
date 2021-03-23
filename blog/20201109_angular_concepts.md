@@ -599,7 +599,7 @@ export class HeroDetailComponent implements OnInit {
 }
 ```
 
-## <a name="http">HTTP</a>
+## <a name="http">HTTP and Observables</a>
 
 In order to get resources from the web, the **HttpClientModule** is used to send requests and receive responses. You'll first want to import this module into your `app.module.ts` file and add it to the `imports` array of the `@NgModule` decorator. Importing this module will make it available throughout your entire app.
 
@@ -649,15 +649,9 @@ getHeroes(): Observable<object[]> {
 ```
 
 ```js
-private handleError<T>(operation = 'operation', r# ngForm
+private handleError<T>(operation = 'operation', result?: T) {
+  return (error: any): Observable<T> => {
 
-ngForm is a directive that will automatically submit the form
-
-```html
-<form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)">
-
-ngSubmit is similar to regular submit but it always does e.preventdefault
-```
     // TODO: send the error to remote logging infrastructure
     console.error(error); // log to console instead
 
