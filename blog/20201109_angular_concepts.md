@@ -336,9 +336,19 @@ and then we'll want to create a property called `form` with the `ViewChild` deco
 ```ts
 export class UserComponent {
     ...
+    user: User = {
+        firstName: '',
+        age: null,
+        address: {
+            street: ''
+        },
+        email: ''
+    }
     @ViewChild('userForm') form: any;
     ...
 ```
+
+**Note**: Make sure to intialize the user property on the component. You will receive errors if you don't because ngModel is expecting an initial value.
 
 We can now create an `onSubmit` method which will take an object with the value and the valid status. Notice that because it's typescript, we're able to ensure the types of value and valid. Our method will simply check if the form is valid (this can act as another layer of checking if we're also using form validation) and push the value onto the array if the valid check passes. Lastly, we'll access the form object set with the `ViewChild` decorator to reset the form.
 
