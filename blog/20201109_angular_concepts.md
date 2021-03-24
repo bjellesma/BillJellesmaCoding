@@ -29,6 +29,7 @@ tags:
 * [Services](blog/20201109_angular_concepts#services)
 * [Routers](blog/20201109_angular_concepts#routers)
 * [HTTP](blog/20201109_angular_concepts#http)
+* [Outputs and Event Emitters](blog/20201109_angular_concepts#output-event-emitter)
 
 A fond memory of mine is coming how from school and making flash cards until I was too tired to make anymore. That being said, I'm sure the memory was more painful than I remember. Well, I figured that I'd need to upgrade my process for the new age so here we go.
 
@@ -348,7 +349,7 @@ export class UserComponent {
     ...
 ```
 
-**Note**: Make sure to intialize the user property on the component. You will receive errors if you don't because ngModel is expecting an initial value.
+**Note**: Make sure to initialize the user property on the component. You will receive errors if you don't because ngModel is expecting an initial value.
 
 We can now create an `onSubmit` method which will take an object with the value and the valid status. Notice that because it's typescript, we're able to ensure the types of value and valid. Our method will simply check if the form is valid (this can act as another layer of checking if we're also using form validation) and push the value onto the array if the valid check passes. Lastly, we'll access the form object set with the `ViewChild` decorator to reset the form.
 
@@ -554,27 +555,52 @@ const routes: Routes = [
 ];
 ```
 
+A special route that can used for pages not found can also be added to the `routes` array. Notice that we're setting `path` to `'**'`
+
+```ts
+const routes: Routes = [
+  ...
+  {
+    path: '**',
+    component: NotFoundComponent
+  }
+];
+```
+
 Another useful feature of the Angular Router is to add a **parameterized route** so that the route can have a placeholder that is filled in at runtime. Angular uses a colon to distinguish parameters.
 
 ```js
 { path: 'detail/:id', component: HeroDetailComponent },
 ```
 
-As for the template file, in order to create a link to this component, you will use the following, `routerlink` is a special attribute that should be the same as one of the paths in the path array above.
+As for the template file, in order to create a link to this component, you will use the following, `routerlink` is a special attribute that should be the same as one of the paths in the path array above. Routerlink is used because it takes advantage of the SPA nature of Angular.
 
 ```html
 <nav>
     <a routerLink="/heroes">Heroes</a>
+</nav>onNewPost(post: Post){
+    this.posts.unshift(post)
+  }ils/{{hero.id}}">Hero details</a>
 </nav>
 ```
 
-For the parameterized route mentioned earlier, you would use regular interpolation to pass the variable.
+Let's say that you have multiple links in your navigation and you want the UI to denote which route is active and highlight it. Angular actually has two special directives that you will want to attach to the list element containing the route, `[routerLinkActive]` and `[routerLinkActiveOptions]`. The `[routerLinkActiveOptions]` directive should be set to `{exact: true}` which will give the highlighted look that you're after
 
 ```html
-<nav>
-    <a routerLink="/details/{{hero.id}}">Hero details</a>
-</nav>
+<ul class="navbar-nav ml-auto">
+    <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="" class="nav-link">Home</a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="users" class="nav-link">Users</a>
+    </li>
+    <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact: true}">
+        <a routerLink="posts" class="nav-link">Posts</a>
+    </li>
+</ul>
 ```
+
+![routerLinkActive](../../assets/images/20201111_angular_concepts/routerLinkActive.gif)
 
 Finally, Angular's `<router-outlet>` is used in the template for where you want the component that you've navigated to to appear. Because Angular reuses as many components as possible in favor of performance, if the user types a new route in the address bar of the browser (`/heroes`), Angular will only replace where router-outlet is defined.
 
@@ -688,3 +714,42 @@ httpOptions = {
 
 Notice that, unlike services, we are not using dependency injection and are instead using the new keyword to create an object. This is because the headers object must be instantiated with the headers.
 
+## <a name="output-event-emitter">Outputs and Event Emitters</a>
+
+Outputs are how we can get data from one component to another. We did this by instancing a new `EventEmitter` object.
+
+1. We'll want to import the classes from `@angular/core`
+
+```ts
+import { EventEmitter, Output } from '@angular/core';
+```
+
+2. Now we can use the `@Output()` decorator to create `newPost`, an object which is an instance of `EventEmitter`
+
+```ts
+@Output() newPost: EventEmitter<Post> = new EventEmitter();
+```
+
+3. On that same component, we can now emit a `Post` to a property called `newPost`.
+
+```ts
+this.postService.savePost({title, body} as Post).subscribe((post) => {
+      this.newPost.emit(post)
+    })
+```
+
+4. On the selector for the component, we'll create an event like any other but use the property `newPost` as the name of the event and attach this to a method that we'll create on the component where we include the selector. This would be the parent component. For example, if we're emitting an event on a component called `post-form`, we'll create the `onNewPost` method on the `post` component.
+
+**Note** Be sure to pass along the `$event` as an argument to the method
+
+```html
+<app-post-form (newPost)="onNewPost($event)"></app-post-form>
+```
+
+5. Finally, on the `post` component, we can now create a method to accept that argument 
+
+```ts
+onNewPost(post: Post){
+    this.posts.unshift(post)
+  }
+```
