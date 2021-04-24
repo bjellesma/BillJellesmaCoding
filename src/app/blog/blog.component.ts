@@ -20,6 +20,7 @@ export class BlogComponent implements OnInit {
   blogTitle: string;
   blogDate: string;
   blogAuthor: string;
+  blogImage: string;
   
   ngOnInit() {
   }
@@ -38,6 +39,7 @@ export class BlogComponent implements OnInit {
       })
     })
   ).subscribe(data => {
+    this.blogImage = data.image
     this.blogTitle = data.title 
     this.blogAuthor = data.author
     this.blogDate = data.date
