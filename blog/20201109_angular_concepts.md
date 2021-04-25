@@ -1,7 +1,7 @@
 ---
 title: 'Angular Concepts'
 date: '2020-11-10 20:45:00'
-updateTime: '2021-03-21 14:30:00'
+updateTime: '2021-04-24 14:30:00'
 author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20201104_angular_cheat_sheet.png'
@@ -281,7 +281,36 @@ setCurrentStyles(){
 
 ## <a name="ngform">ngForm and Form Validation</a>
 
-ngForm is a directive included in the Angular Forms Module that will provide easier submission and validation. Take the following form for example:
+ngForm is a directive included in the Angular Forms Module that will provide easier submission and validation. 
+
+We first need to import the FormsModule into our `app.module.ts` file. **FormsModule** is where the ngModel directive is defined and is not included by default when you start a new project but is very easy to import.
+
+1. In `app.module.ts`, import the FormsModule using the following syntax at the top of the file
+
+```js
+import { FormsModule } from '@angular/forms';
+```
+
+2. The FormsModule must be included in the imports array of the NgModule decorator, also in `app.module.ts`
+
+```js
+@NgModule({
+  declarations: [
+    AppComponent,
+    HeroesComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+```
+
+Now, we're ready to use `ngForm` in our angular application.
+
+Take the following form for example:
 
 ```html
 <form #userForm="ngForm">
