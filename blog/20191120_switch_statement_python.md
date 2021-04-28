@@ -6,7 +6,7 @@ author: 'Bill Jellesma'
 authorImage: '../../assets/images/author/author-bjellesma.jpg'
 image: '../../assets/images/20191120_bjellesma_switch.jpg'
 tags:
-- Python
+- Python 
 ---
 
 # Edit - February 6, 2020

@@ -10,3 +10,13 @@ a {
     color:whitesmoke;
     font-weight:bold;
 }
+
+.blog-image {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.blog-image img{
+    width:300px;
+}

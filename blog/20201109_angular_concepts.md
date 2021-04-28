@@ -16,7 +16,7 @@ tags:
 * [Components](blog/20201109_angular_concepts#components)
   * [String Interpolation](blog/20201109_angular_concepts#interpolation)
   * [ngNonBindable](blog/20201109_angular_concepts#ngNonBindable)
-  * [Template Reference Vaiabled](blog/20201109_angular_concepts#template-reference-variables)
+  * [Template Reference Vaiables](blog/20201109_angular_concepts#template-reference-variables)
 * [Interfaces](blog/20201109_angular_concepts#interfaces)
 * [Pipes](blog/20201109_angular_concepts#pipes)
 * [Two Way Binding](blog/20201109_angular_concepts#binding)
