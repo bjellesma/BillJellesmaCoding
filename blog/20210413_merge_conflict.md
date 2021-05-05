@@ -9,7 +9,7 @@ tagline: 'Merge Conflicts are completely natural and nothing to be ashamed of'
 published: true
 tags:
     - Git
-    - Visual Studio Code
+    - Visual Studio Code 
 ---
 
 1. Create a directory to house your project `mkdir MergeConflict && cd MergeConflict`
