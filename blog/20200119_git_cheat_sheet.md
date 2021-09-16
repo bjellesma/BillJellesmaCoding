@@ -1,13 +1,13 @@
 ---
-title: 'Git Cheat Sheet'
-date: '2020-01-19 01:00:00'
-updateTime: '2020-04-20 23:00:00'
-author: 'Bill Jellesma'
-authorImage: '../../assets/images/author/author-bjellesma.jpg'
+title: "Git Cheat Sheet"
+date: "2020-01-19 01:00:00"
+updateTime: "2021-09-15 23:00:00"
+author: "Bill Jellesma"
+authorImage: "../../assets/images/author/author-bjellesma.jpg"
 image: ../../assets/images/20200119_git_cheat_sheet.jpeg
-tagline: 'Git is a powerful versioning system but how do you use it!'
+tagline: "Git is a powerful versioning system but how do you use it!"
 tags:
-- git
+  - git
 ---
 
 ## Intro
@@ -21,6 +21,7 @@ However, when I first heard of Git, it took me awhile until I started putting it
 This is arguably the most useful command as this is the command that enables Git to do its thing. `git init` creates a hidden `.git` directory inside of your current working directory. This `.git` directory will contain all of the contents needed to track all of your file changes.
 
 ## git add
+
 `git add <file(s)>`
 
 This command will add the files listed to what git refers to as the staging area. The staging area is what git will use to get your files ready to be committed. Most commonly, I use `git add .` to add all files tracked by git to the staging area.
@@ -35,6 +36,7 @@ secure/secure.txt
 A `.gitignore` file is found to be very useful because then I can simply use `git add .` which will ignore adding any files in the `.gitignore` file.
 
 ## git rm
+
 `git rm --cached <file>`
 
 This command will remove a file from the staging area. For example, if I were to accidentally do a `git add .` and forget to add my file of passwords to the `.gitignore` file, my file of passwords (passwords.txt) would be added to the staging area. I can simply use `git rm --cached passwords.txt` from the staging area so that my passwords file won't appear in any commit history. I will most often use this command to remove a sensitive file from my staging area and then immediately make an entry in my `.gitignore` file that will skip that file when using `git add .`
@@ -43,9 +45,10 @@ This command will remove a file from the staging area. For example, if I were to
 
 This is the command that will create a "save point" or "snapshot" for your project. The command will take all files in your staging area and create a commit hash that you can later use to revert to.
 
-As a quick aside, I used to always associate Git and Github in my mind thinking that I needed to have a public repository on Github in order to use Git. Well, my vampire novel isn't fully fleshed out (pun intended) and still needs an antagonist so I don't want it to be public. You can use Git by itself to track the changes even if you want that novel to be private and only available on your computer. In fact, you can nowadays create a [private github repo](https://thenextweb.com/dd/2019/01/05/github-now-gives-free-users-unlimited-private-repositories/) although I've never felt the need to use these private repos were a paid feature when I first learned Git. 
+As a quick aside, I used to always associate Git and Github in my mind thinking that I needed to have a public repository on Github in order to use Git. Well, my vampire novel isn't fully fleshed out (pun intended) and still needs an antagonist so I don't want it to be public. You can use Git by itself to track the changes even if you want that novel to be private and only available on your computer. In fact, you can nowadays create a [private github repo](https://thenextweb.com/dd/2019/01/05/github-now-gives-free-users-unlimited-private-repositories/) although I've never felt the need to use these private repos were a paid feature when I first learned Git.
 
 ## git remote
+
 `git remote add <remote name> <remote url>`
 
 This command digs a little deeper. Remotes are like an alias that you'll use for git to know where to push code to and fetch code from. This can be a remote that points to a network location or [github.com](github.com). `<remote name>` is a name that you give to identify your remotes. `<remote url>` is a url or address that you give to your remote to point to a git repository.
@@ -63,6 +66,7 @@ In the above command, `origin` is the name of the command and `https://github.co
 I ran into a situation where I cloned a git repo to my local machine and then wanted to change the `origin` remote to go to a new git url. I used `git remote rm origin` to remove the remote and then `git remote add origin <remote url>` for that to go to a new git repo. You can use `git remote -v` to view all of your remotes in order to verify that the change took effect.
 
 ## git push
+
 `git push <remote name> <branch>`
 
 This will push your local git repository to your remote repository. Most commonly, this remote repository will be your Github repo; but you can also push to a remote repository [on your network](https://gist.github.com/zarzen/e60ff6824ff7c7424e25).
@@ -107,16 +111,19 @@ See 'git help config' and search for 'push.default' for further information.
 Use `git config --global push.default simple` to just use the simple behavior which matches your current branch to the corresponding remote branch.
 
 ## git pull
+
 `git pull`
 
 This command will simply grab all of the changes on your remote and sync them to your local repository. I like to use this command when I've made some changes on github and I want to sync them to my local computer.
 
 ## git branch
+
 `git branch <branch name>`
 
 This command will create a new branch for your project. Going back to our video game metaphor, a branch is like when you would save your game in two save blocks. You would then do something wildly different on one save block like choose a new power up while choosing a new piece of gear on the other save block. On a programming project, you might choose to add a new feature for your users on a new project branch while still maintaining a stable branch of the project that users can download. It's a good idea to have a separate branch if you want to try out a new feature or a potential bugfix because if the changes end up not working, you can simply delete the branch with `git branch -d <branch name>`.
 
 ## git merge
+
 `git merge <branch with changes> <branch for changes to be merged into>`
 
 If you've taken the advice of using a separate branch for a new feature or a bug fix, you'll need to be able to merge your code to your main branch after all of the tests are written. A merge is how you get your changes into your main code branch. Git Merge is important to get correct because if you have the branches in the wrong order, you may end up with a whole host of problems including merge conflicts.
@@ -125,10 +132,17 @@ Let's say that you've finished rewriting a module of code with a newer package o
 
 What if, after you've created the rewrite branch, you had to go to the master branch to create another change and this change on the master branch conflicts with the changes on the rewrite branch? If you use the above merge command, git will open the conflicting files in the text editor listed and ask you to decide the correct code since Git is now confused as to which code to use. An issue that I've found to be fairly common is that you may know that the code on the rewrite branch is correct. Maybe you've ensured that any code changes to master were also made to rewrite. You can use `git merge -X rewrite master` to instruct Git that the code on rewrite should be used if any conflicts arise.
 
-## git checkout 
+## git checkout
+
 `git checkout <branch name or commit hash>`
 
 Checkout is used as your main way to move between different states of your code repository. You can checkout a branch to switch to working on another branch of the project. You can also enter a commit hash to revert to a previous commit in your project. Let's say that you introduced a bad bug in your code and you only know that the problem first showed up three months ago. You can use `git log` to find the commits and all of their associated hashes. Find the hash of the commit from three months ago and use `git checkout <hash>`. You can now look at the code to see what has changed since then.
+
+## Git Rebase
+
+Bring up the last N number of commits and choose to pick or squash them with `git rebase -i HEAD~n` where n is the number of commits to look back at. If you have Visual Studio code set as your default editor and the Gitlens extension, you'll be able to see a more interactive GUI.
+
+![](images/../res/2021-09-15-21-19-04.png)
 
 ## Outro
 
