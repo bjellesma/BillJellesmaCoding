@@ -142,7 +142,7 @@ Checkout is used as your main way to move between different states of your code 
 
 Bring up the last N number of commits and choose to pick or squash them with `git rebase -i HEAD~n` where n is the number of commits to look back at. If you have Visual Studio code set as your default editor and the Gitlens extension, you'll be able to see a more interactive GUI.
 
-![](images/../res/2021-09-15-21-19-04.png)
+![](../../assets/images/20210915_rebase.png)
 
 ## Outro
 
