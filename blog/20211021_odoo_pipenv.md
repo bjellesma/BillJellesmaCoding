@@ -24,7 +24,7 @@ I've also talked before about several other advantages of using [`pipenv` as a v
 
 - Unlike `virtualenv` where you needed to enter the virtual shell first to give you a virtual command prompt **and then** run your script, `pipenv` lets you run anything from your virtual environment with one command by prefixing your command with `pipenv run`. For example, to run a script called `hello.py` using `pipenv`, you can simply use `pipenv run python hello.py`
 
-![Running hello.py](images/../res/2021-10-22-00-22-00.png)
+![Running hello.py](../../assets/images/2021-10-22-00-22-00.png)
 
 As we'll see below, `pipenv` also creates an easy way to run scripts.
 
@@ -38,11 +38,11 @@ It probably won't come as much of a surprise that `pipenv` itself is a python pa
 
 When you first clone the [Odoo repository from Github](https://github.com/odoo/odoo), you'll see a `requirements.txt` file. This file is usually used with `pip` to install all of the listed packages. `pipenv` also has a built in way to use this file. If this is a fresh install or no `Pipfile` is present, you can simply use `pipenv install` and it will automatically detect a `requirements.txt` file being used.
 
-![Fresh Installl](images/../res/2021-10-21-23-31-05.png)
+![Fresh Installl](../../assets/images/2021-10-21-23-31-05.png)
 
 If a `Pipfile` is already present and you simply want to add what's contained in `requirements.txt`, you can also do this by explicitly specifying your `requirements.txt` file with `pipenv install -r requirements.txt`
 
-![Install requirements.txt](images/../res/2021-10-21-23-39-05.png)
+![Install requirements.txt](../../assets/images/2021-10-21-23-39-05.png)
 
 3. On your `Pipfile`, create a script to start Odoo
 
