@@ -14,15 +14,13 @@ tags:
 
 Odoo is an Open Source Enterprise Resource Planning (ERP) system making it easier to manage inventory and facilitate sales and purchase orders, among other features. What makes Odoo nicer to work with than other ERP systems is the app store like way enabling you to install features that you need and leave out features that you don't need. These features that you can install are referred to as `modules`. Like the app store for Iphone and Android, you can even choose to write your own if you desire additional functionality.
 
-While Odoo opens up a world of possibilities, the first step is to install the base Odoo system. The base Odoo System also comes with several built in modules.
+While Odoo opens up a world of possibilities, the first step is to install the base https://billjellesmacoding.netlify.app/blog/20210912_odoo_installOdoo system. The base Odoo System also comes with several built in modules.
 
 # Installing
 
 In the following steps, we'll be running Odoo from source. I find this to be a better approach than a packaged installation from a development point of view because you'll be able to create custom modules if you wish. I'm using Linux Mint to install Odoo so these commands will work well for a Debian based distribution like Linux Mint or Ubuntu. If you're using another distribution like Fedora, you should be able to use `yum` or your distribution's package manager to install packages like `sudo yum update`.
 
-1. Install Git
-
-Install git with `sudo apt-get install git`. We will use git to clone the Odoo repository so that we can run Odoo from source.
+1. Install Githttps://billjellesmacoding.netlify.app/blog/20210912_odoo_instally so that we can run Odoo from source.
 
 2. Use Git to clone the odoo community repo
 
