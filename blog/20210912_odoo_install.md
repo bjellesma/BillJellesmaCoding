@@ -1,7 +1,7 @@
 ---
 title: "Installing Odoo"
 date: "2021-09-12 17:00:00"
-updateTime: "2021-09-12 17:00:00"
+updateTime: "2022-02-27 17:00:00"
 author: "Bill Jellesma"
 authorImage: ../../assets/images/author/author-bjellesma.jpg
 image: ../../assets/images/20210912_odoo.jpg
@@ -11,6 +11,10 @@ tags:
   - Python
   - Odoo
 ---
+
+# Updates
+
+- 2022-02-27 - Update database creation
 
 Odoo is an Open Source Enterprise Resource Planning (ERP) system making it easier to manage inventory and facilitate sales and purchase orders, among other features. What makes Odoo nicer to work with than other ERP systems is the app store like way enabling you to install features that you need and leave out features that you don't need. These features that you can install are referred to as `modules`. Like the app store for Iphone and Android, you can even choose to write your own if you desire additional functionality.
 
@@ -42,11 +46,7 @@ First, switch to the postgres user to create the new database user with `sudo su
 
 Note in the above command that even though `postgres` is being used as the username, this means that we're connecting as `postgres`, we're still creating a new user.
 
-6. Create a PostGres Database
-
-Now that a new user has been created, you can now create a new database with `createdb {database}`
-
-7. Install the required Linux dependencies
+6. Install the required Linux dependencies
 
 Using a debian based distribution, we can install the required dependencies with
 
@@ -59,13 +59,36 @@ sudo apt install python3-dev libxml2-dev libxslt1-dev libldap2-dev libsasl2-dev 
 
 These will be the linux packages required for installation.
 
-8. Install the required python dependencies
+7. Install the required python dependencies
 
 In addition to the Linux dependencies, we'll also need to install dependencies for python in order to properly run the program. In the same directory with the `requirements.txt`, run the following commands
 
 ```bash
 pip3 install setuptools wheel
 pip3 install -r requirements.txt
+```
+
+8. Start the server and setup the database
+
+Once you've started the server with `python .\odoo-bin` and gone to `http://localhost:8069/web/database/selector`, you should be presented with a screen asking you to choose existing databases or to manage your databases and setup a new one.
+
+![Database Manager](../../assets/images/20210912_odoo_install/database-manager.png)
+
+On this screen, you should create a database.
+
+![Database Create](../../assets/images/20210912_odoo_install/database-create.png)
+
+If you encounter an access denied error, it may be that there already is a master password.
+
+![Access Denied](../../assets/images/20210912_odoo_install/access-denied.png)
+
+You can set a master password while starting the odoo server by appending `admin_passwd` to your conf file. A detailed explanation of the conf file is in the next section. But the file would look like the following
+
+```conf
+[options]
+addons=~/path/odoo/addons
+database=odoo-test
+admin_passwd=test
 ```
 
 # All Set

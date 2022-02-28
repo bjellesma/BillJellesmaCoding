@@ -1,7 +1,7 @@
 ---
 title: "Using Pipenv with Odoo"
 date: "2021-10-22 1:00:00"
-updateTime: "2021-10-22 1:00:00"
+updateTime: "2022-02-27 1:00:00"
 author: "Bill Jellesma"
 authorImage: ../../assets/images/author/author-bjellesma.jpg
 image: ../../assets/images/20210912_odoo.jpg
@@ -129,3 +129,97 @@ test = "python ./odoo-bin --test-file=addons/sillygame/tests/test_sillygame.py"
 ```
 
 So, now we can run `pipenv run test` whenever we want to run our test.
+
+# Common Errors
+
+## Setuptools
+
+Typically, you'll see a message that says that locking has failed. You may see an installation error such as the following:
+
+```
+Command "python setup.py egg_info" failed with error code 1
+```
+
+I solved this by running this line to upgrade my pipenv installation `pip install --upgrade pipenv`. Additionally, you should make sure that setuptools, pip, and ez_setup are up to date.
+
+```
+pip install --upgrade pip
+pip install --upgrade setuptools
+pip install --upgrade ez_setup
+```
+
+You can then use `pipenv lock --pre --clear` to attempt to resolve any unresolved dependencies.
+
+## Out of date requirements.txt
+
+After solving the above error for setuptools, I then received the following error when using `pipenv install -r requirements.txt`
+
+```
+[pipenv.exceptions.ResolutionFailure]: Warning: Your dependencies could not be resolved. You likely have a mismatch in your sub-dependencies.
+  You can use $ pipenv install --skip-lock to bypass this mechanism, then run $ pipenv graph to inspect the situation.
+  Hint: try $ pipenv lock --pre if it is a pre-release dependency.
+ERROR: No matching distribution found for feedparser==5.2.1
+```
+
+For this common error, feedparser is just an example as other packages may no longer be needed in later versions of Odoo.
+
+A little google-foo led me to [this github issue](https://github.com/odoo/odoo/issues/76144) where it's basically saying that feedparser is no longer a requirement in newer versions of Odoo. If you check the [branch 14.0 requirements.txt file](https://github.com/odoo/odoo/blob/14.0/requirements.txt), you'll see that feedparser has been removed. Depending on whether you've cloned the branch directly or created a fork, you may either do a `git pull` to pull the changes from the remote or simply copy and paste the contents of the file.
+
+One important note is that if you've already run `pipenv install -r requirements.txt`, you may already have content in the packages section of your `Pipfile`.
+
+```py
+[dev-packages]
+
+[packages]
+feedparser = "==5.2.1"
+...
+freezegun = "==0.3.15"
+...
+```
+
+In this case, remove the contents of the section so that when `pipenv install -r requirements.txt` is run, it'll pull all of the dependencies correctly.
+
+```py
+[dev-packages]
+
+[packages]
+
+```
+
+## Pywin
+
+After running `pipenv install -r requirements.txt`, I received a new error on use pywin
+
+```
+[pipenv.exceptions.ResolutionFailure]: Warning: Your dependencies could not be resolved. You likely have a mismatch in your sub-dependencies.
+  You can use $ pipenv install --skip-lock to bypass this mechanism, then run $ pipenv graph to inspect the situation.
+  Hint: try $ pipenv lock --pre if it is a pre-release dependency.
+ERROR: No matching distribution found for pywin32>=223
+```
+
+This particular error occurred because I'm using linux. If you check the `requirements.txt` file, you can remove the line with the call for `pypiwin32 ; sys_platform == 'win32'`. Though this error shouldn't appear if you're using Windows, this dependency is unneeded if you're using a Mac or Linux. After removing this line from `requirements.txt`, you'll once again need to manually clear the dependencies in your `Pipfile` so that the packages section looks as the following:
+
+```py
+[dev-packages]
+
+[packages]
+
+```
+
+If you've made it past these errors, you should now be generating a `pipfile.lock`
+
+## ModuleNotFound Errors
+
+```
+ModuleNotFoundError: No module named 'PyPDF2'
+ModuleNotFoundError: No module named 'OpenSSL'
+```
+
+```
+pipenv install PyPDF2
+pipenv install pyOpenSSL
+```
+
+## Deprecation Warning
+
+Although I'm able to start my server successfully with `python ./odoo-bin`
