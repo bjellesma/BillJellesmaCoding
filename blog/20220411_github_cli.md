@@ -16,8 +16,11 @@ If you've met me, you'll know that I'm not as much of a fan of using the browser
 
 # Install Github CLI
 
-If you navigate to `cli.github.com`, you'll see a big button to install the github CLI for your specific platform
-![Github CLI](../../assets/images/2022-04-11-22-13-33.png). You can also click the "view installable instructions" to see the installation instructions for specific package managers and platforms. For example, on Windows, you can install via [Chocolatey](https://chocolatey.org/) with `choco install gh` and on Mac you can install via [Homebrew](https://brew.sh/) with `brew install gh`. On debian based distributions of linux, you will need to add the github cli to your aptitude package manager first.
+If you navigate to `cli.github.com`, you'll see a big button to install the github CLI for your specific platform.
+
+![Github CLI](../../assets/images/2022-04-11-22-13-33.png)
+
+You can also click the "view installation instructions" to see the installation instructions for specific package managers and platforms. For example, on Windows, you can install via [Chocolatey](https://chocolatey.org/) with `choco install gh` and on Mac you can install via [Homebrew](https://brew.sh/) with `brew install gh`. On debian based distributions of linux, you will need to add the github cli to your aptitude package manager first.
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
