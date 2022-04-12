@@ -17,7 +17,7 @@ If you've met me, you'll know that I'm not as much of a fan of using the browser
 # Install Github CLI
 
 If you navigate to `cli.github.com`, you'll see a big button to install the github CLI for your specific platform
-![Github CLI](images/../res/2022-04-11-22-13-33.png). You can also click the "view installable instructions" to see the installation instructions for specific package managers and platforms. For example, on Windows, you can install via [Chocolatey](https://chocolatey.org/) with `choco install gh` and on Mac you can install via [Homebrew](https://brew.sh/) with `brew install gh`. On debian based distributions of linux, you will need to add the github cli to your aptitude package manager first.
+![Github CLI](../../assets/images/2022-04-11-22-13-33.png). You can also click the "view installable instructions" to see the installation instructions for specific package managers and platforms. For example, on Windows, you can install via [Chocolatey](https://chocolatey.org/) with `choco install gh` and on Mac you can install via [Homebrew](https://brew.sh/) with `brew install gh`. On debian based distributions of linux, you will need to add the github cli to your aptitude package manager first.
 
 ```bash
 curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
@@ -30,11 +30,11 @@ sudo apt install gh
 
 Before you can list any pull requests or any of those fancy actions, you'll want to run `gh auth login`. You'll be asked how you want to authenticate. I'm just using my personal github so I chose to just login to github.com (not enterprise) via a web browser.
 
-![Login to Github](images/../res/2022-04-11-22-34-25.png)
+![Login to Github](../../assets/images/2022-04-11-22-34-25.png)
 
 The CLI will then give you a one time code that you can use to link to github as a device on [https://github.com/login/device](https://github.com/login/device). Once you login, the command line will confirm that you're logged in and return you to your prompt.
 
-![Github login confirmation](images/../res/2022-04-11-22-37-37.png)
+![Github login confirmation](../../assets/images/2022-04-11-22-37-37.png)
 
 You're now authenticated with github and can begin issuing requests.
 
@@ -46,7 +46,7 @@ The first thing we'll do is just create a new repo on github so skip to the next
 
 I simply just created a new repo.
 
-![New repo](images/../res/2022-04-11-22-45-11.png)
+![New repo](../../assets/images/2022-04-11-22-45-11.png)
 
 Next, we'll create a new directory on our local machine and issue the following to init the repo and add a remote.
 
@@ -83,17 +83,17 @@ On the above command, we've used the following options
 
 Here's the pull request that is created.
 
-![Created Pull Request](images/../res/2022-04-11-23-05-39.png)
+![Created Pull Request](../../assets/images/2022-04-11-23-05-39.png)
 
 # List Pull Requests and check status
 
 Say this is a large scale project, and you'd like to get up in the morning and see all of the pull requests assigned to you. Once again, your command line must be on your local directory with the github repository. `gh pr list --assignee 'bjellesma'`
 
-![Github list PR](images/../res/2022-04-11-23-09-03.png)
+![Github list PR](../../assets/images/2022-04-11-23-09-03.png)
 
 But Github went a step further and gave you a single status command so that you can see PRs on the current branch, what you've created, and any code reviews request. The command is simply `gh pr status`
 
-![Github Status](images/../res/2022-04-11-23-12-25.png)
+![Github Status](../../assets/images/2022-04-11-23-12-25.png)
 
 # Integrate this with a task runner
 
