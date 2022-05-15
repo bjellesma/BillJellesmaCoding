@@ -1,7 +1,7 @@
 ---
 title: "Git Cheat Sheet"
 date: "2020-01-19 01:00:00"
-updateTime: "2021-09-15 23:00:00"
+updateTime: "2022-05-15 23:00:00"
 author: "Bill Jellesma"
 authorImage: "../../assets/images/author/author-bjellesma.jpg"
 image: ../../assets/images/20200119_git_cheat_sheet.jpeg
@@ -138,11 +138,28 @@ What if, after you've created the rewrite branch, you had to go to the master br
 
 Checkout is used as your main way to move between different states of your code repository. You can checkout a branch to switch to working on another branch of the project. You can also enter a commit hash to revert to a previous commit in your project. Let's say that you introduced a bad bug in your code and you only know that the problem first showed up three months ago. You can use `git log` to find the commits and all of their associated hashes. Find the hash of the commit from three months ago and use `git checkout <hash>`. You can now look at the code to see what has changed since then.
 
-## Git Rebase
+## Git Interactive Rebase
 
 Bring up the last N number of commits and choose to pick or squash them with `git rebase -i HEAD~n` where n is the number of commits to look back at. If you have Visual Studio code set as your default editor and the Gitlens extension, you'll be able to see a more interactive GUI.
 
 ![](../../assets/images/20210915_rebase.png)
+
+## Git Cherry Pick versus Rebase
+
+Often Times, I find that my feature branch will get "stale" before it has a chance be merged back to main. What do I mean by stale? Let's go through a quick example.
+
+Let's say that I'm want to add a new feature to a project so that every time I type the word party, it throws confetti across the screen. So I start working on this feature branch, `branchA` on May 1st by forking directly from main. I make commit A on May 2nd. But then I hear that there's a bug that everytime the word exit is typed, the program crashes. This is a bug that has to be finished ASAP so I immediately create a new feature branch, `branchB`, where, between May 2nd and May 5th, I make commits B-E. Now it's May 6th and the bug is now solved, I merge the feature branch including commits B-E into main.
+
+Now I'm ready to work on my work on my party feature again. I make commit F and now I'm ready to merge this back into `main`. As I make a pull request, I find that I have a number of merge conflicts because all of these commits have touched similar code and git can't tell what to keep and what to throw out. To resolve this so that our pull request doesn't run into conflicts, we have two options: **rebase** or **cherry pick**. The option that you choose largely depends on the size of the project, the number of commits in your feature branch, and the number of people working on the project.
+
+I've found that **Rebasing** should be your first attempt because this will rewind the branch that you're currently on until git finds a commit in common with the branch your rebasing and then attempt to apply all commits in order. This is a great method because it ensures that you'll get every commit on the feature branch. Let's see how this works in the command line.
+
+1. `git checkout branchA`
+2. `git rebase main`
+
+You'll probably run into conflicts when rebasing. This is because multiple commits have edited the same codebase and git can't decide on its own which code to keep. Git will do this by placing markup in the files to indicate what code is currently on your branch and what code you're attempting to bring in. Visual Studio code will highlight these files as will as the conflicts and let you easily choose which code to keep. Let's say that you ran into a conflict in `fileA`. Once you solve the conflict, you would do `git add fileA` to add the file to the staging branch. You can then do `git rebase --continue` to move to the other conflicts or complete the rebase.
+
+If rebasing is to complex and needs to rewind several hundred commits (You can view how many commits with `( RaD="$( git rev-parse --git-path 'rebase-apply/' )" && N=$( cat "${RaD}next" ) && L=$( cat "${RaD}last" ) && echo "${N} / ${L}" ; )`), as may occur in large scale enterprise projects, my solution is to use **cherry pick**. What I'll do is to fork a new branch from main, find the SHA hash of the commit that I want to bring into my new branch (you can see the hash by using `git log` on the original feature branch), and then simply use `git cherry-pick <commit hash>`. The disadvantage and why this is usually my backup to rebasing is that this largely depends on knowing the exact commits that you want to bring. If you only have a couple of commits, this really isn't an issue.
 
 ## Outro
 
