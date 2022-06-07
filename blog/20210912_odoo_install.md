@@ -82,13 +82,18 @@ If you encounter an access denied error, it may be that there already is a maste
 
 ![Access Denied](../../assets/images/20210912_odoo_install/access-denied.png)
 
-You can set a master password while starting the odoo server by appending `admin_passwd` to your conf file. A detailed explanation of the conf file is in the next section. But the file would look like the following
+You can set a master password while starting the odoo server by appending `admin_passwd` to your conf file. Also, make sure to set your database user credentials in the below `run.conf` file. If the postgres user that you created above in "Create a new PostGres User" is named user, use this username for `db_user`. A detailed explanation of the conf file is in the next section. But the file would look like the following
 
 ```conf
 [options]
 addons=~/path/odoo/addons
 database=odoo-test
 admin_passwd=test
+db_host=localhost
+db_maxconn=64
+db_user=user
+db_password=password
+db_port=5432
 ```
 
 # All Set
@@ -113,7 +118,7 @@ database=odoo-test
 
 We can now run `python3 ./odoo-bin -c run.conf`. This has the advantages of not needing to remember configuration parameters, making the environment easier to share with teammates, and making it easier to change configuration parameters by editing a file rather than the command line.
 
-Odoo should now be live and we can navigate to this in a browser by going to `http://localhost:8069`
+Odoo should now be live and we can navigate to this in a browser by going to `http://localhost:8069`.
 
 # Logging in
 
