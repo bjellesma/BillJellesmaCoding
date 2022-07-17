@@ -5,7 +5,7 @@ updateTime: "2022-06-06 23:00:00"
 author: "Bill Jellesma"
 authorImage: ../../assets/images/author/author-bjellesma.jpg
 image: ../../assets/images/20220606_odoo_modules.jpg
-tagline: "When dealing with beet farmers, you better know the conversion ration"
+tagline: "When dealing with beet farmers, you better know the conversion ratio"
 published: true
 tags:
   - Odoo
