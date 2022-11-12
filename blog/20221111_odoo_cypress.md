@@ -63,7 +63,7 @@ The launchpad will begin loading your configuration and then you will be able to
 
 ![Choose a Browser](../../assets/images/20221111_cypress/2022-11-11-20-49-02.png)
 
-##<a href="test">Your first test</a>
+## <a href="test">Your first test</a>
 
 Now that we've configured cypress, cypress launchpad has launched a new automated web browser.
 
