@@ -16,10 +16,10 @@ tags:
 Cypress is an amazing tool for testing your entire application just as a user would see it. I've used it in other projects that I've worked on in the past so I wanted to revisit it and take a look how I could use it to do end2end testing for Odoo
 
 <ul>
-    <li><a href="#install">Installing Cypress</a></li>
-    <li><a href="#configure">Configure Cypress</a></li>
-    <li><a href="#logging">Logging into Odoo</a></li>
-    <li><a href="#rfq">Entering a Request for Quotation</a></li>
+    <li><a href="blog/20221111_odoo_cypress#install">Installing Cypress</a></li>
+    <li><a href="blog/20221111_odoo_cypress#configure">Configure Cypress</a></li>
+    <li><a href="blog/20221111_odoo_cypress#logging">Logging into Odoo</a></li>
+    <li><a href="blog/20221111_odoo_cypress#rfq">Entering a Request for Quotation</a></li>
 </ul>
 
 ## <a title="install">Installing Cypress</a>
