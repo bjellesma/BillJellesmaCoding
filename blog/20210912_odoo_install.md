@@ -18,7 +18,7 @@ tags:
 
 Odoo is an Open Source Enterprise Resource Planning (ERP) system making it easier to manage inventory and facilitate sales and purchase orders, among other features. What makes Odoo nicer to work with than other ERP systems is the app store like way enabling you to install features that you need and leave out features that you don't need. These features that you can install are referred to as `modules`. Like the app store for Iphone and Android, you can even choose to write your own if you desire additional functionality.
 
-While Odoo opens up a world of possibilities, the first step is to install the base https://billjellesmacoding.netlify.app/blog/20210912_odoo_installOdoo system. The base Odoo System also comes with several built in modules.
+While Odoo opens up a world of possibilities, the first step is to install the base [Odoo](https://www.odoo.com/page/download) (Selecting to download it from source) system. The base Odoo System also comes with several built in modules.
 
 # Installing
 
