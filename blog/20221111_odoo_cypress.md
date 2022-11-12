@@ -22,7 +22,7 @@ Cypress is an amazing tool for testing your entire application just as a user wo
     <li><a href="blog/20221111_odoo_cypress#rfq">Entering a Request for Quotation</a></li>
 </ul>
 
-## <a title="install">Installing Cypress</a>
+## <a name="install">Installing Cypress</a>
 
 1. (Linux) install the necessary aptitude packages
 
@@ -48,7 +48,7 @@ The following code will automatically be inserted into your `package.json` file
   }
 ```
 
-## <a title="configure">Configure Cypress</a>
+## <a name="configure">Configure Cypress</a>
 
 Add a script command to your `package.json` to open cypress launchpad from the command line
 
@@ -111,7 +111,7 @@ describe("Visiting Odoo", () => {
 
 This is a simple test to make sure that we can visit the website. Now we want to actually login to the website to create a purchase order.
 
-## <a title="logging">Logging into Odoo</a>
+## <a name="logging">Logging into Odoo</a>
 
 Using Cypress will require us to actually be able to find the elements in the Document Object Model (DOM) so that we can have cypress type in the details. In Google Chrome, you can either right click anywhere on the webpage and click "Inspect" or you can press F12 on your keyboard. From there, you can actually hover over the names of the elements in the DOM and chrome will highlight on the page what the DOM element is rendering.
 
@@ -132,7 +132,7 @@ describe("Visiting Odoo", () => {
 });
 ```
 
-## <a title="rfq">Entering a Request for Quotation</a>
+## <a name="rfq">Entering a Request for Quotation</a>
 
 After logging into Odoo, creating any automation just becomes a matter of finding the element in the DOM and entering it into the cypress scripts. All elements on the page are fair game to be captured using the familiar CSS selectors. Creating a new request for quotation can be done by expanding the initial script to do the following
 
