@@ -36,11 +36,11 @@ Once the package was installed, I was able to use `tsc --init` to generate a `ts
 
 This will give you those lovely squiggles in your file in vscode to inform you that you must begin specifying types. You'll also no longer need to import react on every component. VSCode also told me this as the `import React` statement was grayed out as it's never used.
 
-![Unneeded import](image-1.png)
+![Unneeded import](../../assets/images/20240410_1.png)
 
 Now get ready to see the red squiggles appear!
 
-![typescript](image.png)
+![typescript](r../../assets/images/20240410_2.png)
 
 To fix this and give pages a type, we can create an interface which tells the mapping array what an object `Page` is supposed to look like
 
