@@ -40,7 +40,7 @@ This will give you those lovely squiggles in your file in vscode to inform you t
 
 Now get ready to see the red squiggles appear!
 
-![typescript](r../../assets/images/20240410_2.png)
+![typescript](../../assets/images/20240410_2.png)
 
 To fix this and give pages a type, we can create an interface which tells the mapping array what an object `Page` is supposed to look like
 
@@ -78,7 +78,7 @@ export interface PageInterface {
 ```
 
 `src/components/pages/PagesNav.tsx`
-```tsx
+```ts
 import pages from '../../data/pages.json'
 import PageNav from './PageNav'
 import { PageInterface } from '../../interfaces/PageInterface'
@@ -118,7 +118,7 @@ export default PageNav
 However, as your objects may begin to have more object properties as you scale you may want to just include a page property on the PageNav Component
 
 `src/components/pages/PagesNav.tsx`
-```tsx
+```ts
 <div className="flex space-x-2">
         {pages.map((page:PageInterface) => (
               <PageNav key={page.id} page={page}/>
@@ -129,7 +129,7 @@ However, as your objects may begin to have more object properties as you scale y
 It's certainly more scalable this way as you try to add more properties, however this now becomes an issue with the interface because you can't just use `PageInterface` anymore.
 
 `src/components/pages/PageNav.tsx`
-```tsx
+```ts
 import { PageInterface } from '../../interfaces/PageInterface'
 
 interface PageNavProps {
@@ -150,7 +150,7 @@ export default PageNav
 
 This is because you now only have `page` in the array destruring so typescript is unable to properly validate. What you can do is to create a new interface on `PageNav.tsx` and use React Functional Components to validate the type of the component.
 
-```tsx
+```ts
 import { PageInterface } from '../../interfaces/PageInterface';
 
 interface PageNavProps {
