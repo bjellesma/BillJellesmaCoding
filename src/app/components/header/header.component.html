@@ -5,7 +5,8 @@
       <div>
         <!-- <a mat-button [routerLink]="'/tags'">Tags</a> -->
         <a mat-button [routerLink]="'/about'">About</a>
-        <a mat-button [routerLink]="'https://botpals.netlify.app/'">BotPals</a>
+        <!-- for external links, we want to use href because we do not want to use angular routing -->
+        <a mat-button href="https://botpals.netlify.app/">BotPals</a>
         <a mat-button href="https://twitter.com/search?q=%23quicktip%20(from%3Abjellesma)&src=typed_query">Quick Tip Tweets</a>
         <!-- <a mat-button [routerLink]="'/contact'">Contact</a> -->
       </div>
