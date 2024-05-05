@@ -1,10 +1,10 @@
 ---
 title: "Linear Algebra in Machine Learning"
 date: "2024-05-04 23:00:00"
-updateTime: "2024-04-12 23:00:00"
+updateTime: "2024-05-04 23:00:00"
 author: "Bill Jellesma"
 authorImage: ../../assets/images/author/author-bjellesma.jpg
-image: ../../assets/images/2024-05-04-linear-alg.jp
+image: ../../assets/images/2024-05-04-linear-alg.jpg
 tagline: "Magnitudes, Dot Products, Cosine Similarities, Oh My!"
 published: True
 tags:
