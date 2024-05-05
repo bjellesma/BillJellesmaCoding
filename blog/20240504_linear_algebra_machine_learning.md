@@ -172,6 +172,6 @@ We know that 1 times 1 is 1 and 1 times 0 is 0 so
 
 So the entire cosine similarity is now this fraction
 
-## \cos{\theta} = \frac{4}{\sqrt{42}} \approx .617214
+## $\cos{\theta} = \frac{4}{\sqrt{42}} \approx .617214 $
 
 So an interpretation of the cosine similarity tells us that these sentences are similar
