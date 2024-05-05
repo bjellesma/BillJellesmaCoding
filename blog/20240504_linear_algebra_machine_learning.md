@@ -141,48 +141,10 @@ Sentence B = "The weather is on the cold side"
 
 Now let's turn these into vectors and see if we can get a cosine similarity between the two that we can interpret. But notice that if we turned these into vectors, they wouldn't be the same length nor do they have the same words and we wouldn't be able to do the dot product. Well what we can do it take the all of the unique words , make components for each word, and then put a 1 where the sentence has the word and a 0 otherwise. 
 
-<table style="width: 100%; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th style="border: 1px solid black; padding: 8px;">Sentence</th>
-      <th style="border: 1px solid black; padding: 8px;">The</th>
-      <th style="border: 1px solid black; padding: 8px;">weather</th>
-      <th style="border: 1px solid black; padding: 8px;">is</th>
-      <th style="border: 1px solid black; padding: 8px;">a</th>
-      <th style="border: 1px solid black; padding: 8px;">on</th>
-      <th style="border: 1px solid black; padding: 8px;">the</th>
-      <th style="border: 1px solid black; padding: 8px;">cold</th>
-      <th style="border: 1px solid black; padding: 8px;">side</th>
-      <th style="border: 1px solid black; padding: 8px;">one</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;">A</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">0</td>
-      <td style="border: 1px solid black; padding: 8px;">0</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">0</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-    </tr>
-    <tr>
-      <td style="border: 1px solid black; padding: 8px;">B</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">0</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">1</td>
-      <td style="border: 1px solid black; padding: 8px;">0</td>
-    </tr>
-  </tbody>
-</table>
+| Sentence | The | weather | is | a | on | the | cold | side | one |
+|------|------|------|------|------|------|------|------|------|------|
+| A | 1 | 1 | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
+| B | 1 | 1 | 1 | 0 | 1 | 1 | 1 | 1 | 0 | 
 
 Now, let's get ready to take some cosine similarities. We'll start by getting the magnitude of vector A.
 
@@ -210,6 +172,6 @@ We know that 1 times 1 is 1 and 1 times 0 is 0 so
 
 So the entire cosine similarity is now this fraction
 
-## $\cos{\theta} = \frac{4}{\sqrt{42}} \approx .617214 $
+## \cos{\theta} = \frac{4}{\sqrt{42}} \approx .617214
 
 So an interpretation of the cosine similarity tells us that these sentences are similar
