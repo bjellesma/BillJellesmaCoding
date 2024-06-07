@@ -1,7 +1,7 @@
 ---
 title: "Ensuring Accurate Job Status in AWS Glue with sys.exit"
-date: "2024-05-21 23:00:00"
-updateTime: "2024-05-21 23:00:00"
+date: "2024-06-07 17:00:00"
+updateTime: "2024-06-07 17:00:00"
 author: "Bill Jellesma"
 authorImage: ../../assets/images/author/author-bjellesma.jpg
 image: ../../assets/images/2024-05-21-aws-glue.png
