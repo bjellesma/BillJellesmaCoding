@@ -39,7 +39,7 @@ Here are some common applications of supervised learning:
 
 Imagine you're trying to predict the price of a house based on its square footage. You could start by plotting the data and fitting a straight line to it, but perhaps a more complex curve might provide a better fit. The goal of a supervised learning algorithm is to determine the best model—whether a simple line (linear regression) or a more complex curve (polynomial regression) —that can accurately predict the house price based on the square footage.
 
-![House Price Prediction Example](https://github.com/user-attachments/assets/97af4301-604e-4c03-96d4-bb4d23703e86)
+<img src="https://github.com/user-attachments/assets/97af4301-604e-4c03-96d4-bb4d23703e86" alt="House Price Prediction Example" style="max-width:100%; height:auto;">
 
 ### Classification vs. Regression
 
@@ -67,7 +67,7 @@ One common application of unsupervised learning is **clustering**. Here, the alg
 
 For example, Google News uses clustering algorithms to group stories with similar features together, like stories about pandas that share keywords like "panda," "twin," and "zoo."
 
-![Google News Clustering Example](https://github.com/user-attachments/assets/412ab767-1a6f-46aa-afe6-8e606fb5569e)
+<img src="https://github.com/user-attachments/assets/412ab767-1a6f-46aa-afe6-8e606fb5569e" alt="Google News Clustering Example" style="max-width:100%; height:auto;">
 
 ### Other Applications of Unsupervised Learning
 
@@ -77,8 +77,6 @@ For example, Google News uses clustering algorithms to group stories with simila
 ### Visualizing DNA Arrays
 
 A more complex example of unsupervised learning is analyzing DNA arrays. In this case, the algorithm is tasked with identifying genetic patterns without any prior knowledge. The goal is to find similarities and groupings within the genetic data.
-
-![DNA Array Heatmap Example](https://github.com/user-attachments/assets/9c11df5e-154a-4220-9f87-242c91d3dafb)
 
 ## Linear Regression in Supervised Learning
 
@@ -151,7 +149,8 @@ The factor $\frac{1}{2}$ is included for mathematical convenience, as it simplif
 
 In the following image, $\hat{y}$ is where the predicted value is while $y$ is where the actual value is
 
-![Cost Function Example](https://github.com/user-attachments/assets/d928b397-59ce-43a7-9860-d0596955ee39)
+<img src="https://github.com/user-attachments/assets/d928b397-59ce-43a7-9860-d0596955ee39" alt="Cost Function Example" style="max-width:100%; height:auto;">
+
 
 ### Gradient Descent: Finding the Best Fit
 
@@ -181,7 +180,7 @@ The intuition behind gradient descent is analogous to descending a hill. Imagine
 
 In the context of linear regression, the "hill" represents the cost function $J(w, b)$, and the gradient tells us how to adjust $w$ and $b$ to reduce the cost.
 
-![Gradient Descent Example](https://github.com/user-attachments/assets/a6882bcf-088b-441a-805a-7e1c4d8ecf27)
+<img src="https://github.com/user-attachments/assets/a6882bcf-088b-441a-805a-7e1c4d8ecf27" alt="Gradient Descent Example" style="max-width:100%; height:auto;">
 
 ### Choosing the Learning Rate
 
