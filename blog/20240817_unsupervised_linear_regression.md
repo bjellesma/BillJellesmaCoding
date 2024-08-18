@@ -53,7 +53,7 @@ Supervised learning can be broadly categorized into two types: **classification*
 
 In training a spam filter, for example, we provide the algorithm with a dataset of emails that are already labeled as spam or not spam. The algorithm learns to identify patterns—such as certain words or the length of the email—that help it classify new, unseen emails as spam or not spam.
 
-![Spam Filtering Example](https://github.com/user-attachments/assets/10c1eb00-4c60-466a-9bd6-469ad11dac1c)
+<img src="https://github.com/user-attachments/assets/10c1eb00-4c60-466a-9bd6-469ad11dac1c" alt="Spam Filtering Example" style="max-width:100%; height:auto;">
 
 ## Unsupervised Learning
 
