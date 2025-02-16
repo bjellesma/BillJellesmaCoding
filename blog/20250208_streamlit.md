@@ -74,7 +74,7 @@ You can now view your Streamlit app in your browser.
 
 You can click one of the above links and you should see the following in your browser.
 
-![Streamlit Hello World](20250215_streamlit_hello_world.png)
+![Streamlit Hello World](../../assets/images/20250215_streamlit_hello_world.png)
 
 We can set Streamlit to have hot reloading so that whenever we make a change to the file, the browser automatically reloads. Let's change "Hello World" to "Hello Goodbye".
 
@@ -90,7 +90,7 @@ if __name__ == '__main__':
 
 When we save the file, we'll see the following on the browser window letting us know that one of the files has changed and we can set Streamlit to automatically reload by clicking "Always Rerun". Note that whenever you reload the app or refresh the webpage, you'll be prompted to rerun again.
 
-![Streamlit always rerun](20250215_streamlit_rerun.png)
+![Streamlit always rerun](../../assets/images/20250215_streamlit_rerun.png)
 
 # Adding in Pandas
 
@@ -137,7 +137,7 @@ So we're defining a new function called `load_data` that'll simply load the colu
 
 Saving our file shows:
 
-![Streamlit CSV iteration](20250215_streamlit_iteration.png)
+![Streamlit CSV iteration](../../assets/images/20250215_streamlit_iteration.png)
 
 # Adding in Scikit
 
@@ -186,7 +186,7 @@ if __name__ == '__main__':
 
 What we've done is enhanced our `load_data()` function to now encode every label as an integer to prepare it for machine learning training. We've also created a togglable checkbox on the main function that we can use to view the raw data that we have after being label encoded.
 
-![Raw Data](20250215_raw_data.png)
+![Raw Data](../../assets/images/20250215_raw_data.png)
 
 ## Split the dataset
 
@@ -430,7 +430,7 @@ if __name__ == '__main__':
 
 Different classifiers use different parameters so we want to limit the choices based on the model that we'll use. We want to use `number_input` for regularization and max depth params to restrict the input to numerical and only between the min and max; this will also give the user arrows next to the input that they can use to increase or decrease the value in increments of the `step` param. We'll use a slider to specify the number of iterations used in logistic regression so that the user can use a slider rather than having to click the arrows a bunch. We'll use `st.radio` for the kernel and gamma coefficient on the SVM model because there are only a handful of inputs that the user can choose. Here's what the input for random forest will look like.
 
-![Streamlit hyperparameters](20250215_hyperparameters.png)
+![Streamlit hyperparameters](../../assets/images/20250215_hyperparameters.png)
 
 Lastly notice that I've put an if statement with a `st.button` for each classifier. This will introduce a button that the user can click and when they click it, we'll run the model and print the results. This will be the final step!
 
@@ -615,3 +615,4 @@ cm_display = ConfusionMatrixDisplay.from_estimator(
 st.pyplot(cm_display.figure_)
 ```
 
+![Confusion Matix](../../assets/images/20250215_cm.png)
