@@ -40,13 +40,13 @@ if __name__ == '__main__':
 
 You can run this code with 
 
-```
-Streamlit run app.py
+```bash
+streamlit run app.py
 ```
 
 The first time that you run Streamlit, you'll see the following prompt for an email. You can fill this in or leave this blank but personally I like to disable this prompt because if I deploy this app in a docker container later on, this prompt will show everytime I rebuild the container.
 
-```
+```bash
  Welcome to Streamlit!
 
       If you’d like to receive helpful onboarding emails, news, offers, promotions,
@@ -58,13 +58,13 @@ The first time that you run Streamlit, you'll see the following prompt for an em
 
 In order to disable this prompt, you can pass a flag for headless mode.
 
-```
-Streamlit run app.py --server.headless true
+```bash
+streamlit run app.py --server.headless true
 ```
 
 You'll now see output that looks like the following:
 
-```
+```bash
 You can now view your Streamlit app in your browser.
 
   Local URL: http://localhost:8501
