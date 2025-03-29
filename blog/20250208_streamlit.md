@@ -29,7 +29,7 @@ pip install Streamlit
 ```
 
 ```python
-import Streamlit as st
+import streamlit as st
 
 def main():
     st.title("Hello World")
@@ -79,7 +79,7 @@ You can click one of the above links and you should see the following in your br
 We can set Streamlit to have hot reloading so that whenever we make a change to the file, the browser automatically reloads. Let's change "Hello World" to "Hello Goodbye".
 
 ```python
-import Streamlit as st
+import streamlit as st
 
 def main():
     st.title("Hello Goodbye")
@@ -108,13 +108,13 @@ e,x,y,y,t,a,f,c,b,n,e,c,s,s,w,w,p,w,o,p,k,n,g
 
 First let's install Pandas to read a CSV. I've named my CSV `data.CSV` and put this in the same directory.
 
-```
-pip install Pandas
+```bash
+pip install pandas
 ```
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 
 @st.cache_data(persist=True)
 def load_data():
@@ -143,13 +143,13 @@ Saving our file shows:
 
 Now we're cooking with gas! Let's add in scikit-learn, a popular machine learning library, to handle encoding for our labels.
 
-```
+```bash
 pip install scikit-learn
 ```
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -193,8 +193,8 @@ What we've done is enhanced our `load_data()` function to now encode every label
 Next, let's split the dataset into a training and a test set for the model to train on. 
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -258,8 +258,8 @@ Optionally, I've added some type annotations for documentation purposes. This ju
 Let's make use of a Streamlit selectbox to give the user a dropdown to choose the model classifier that they want to use.
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -334,8 +334,8 @@ So the only difference is that we're adding the classifier choice to the main fu
 Just like how we're giving the user a choice of the classifier that they'll use, we want to also give the user a choose of the hyperparameters that'll be used as inputs to the model. This next edit is just to use Streamlit to give the user those options for SVM, Logistic Regression, or Random Forest classifier, depending on what they choose.
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -439,8 +439,8 @@ Lastly notice that I've put an if statement with a `st.button` for each classifi
 Here's the final iteration of the code!
 
 ```python
-import Streamlit as st
-import Pandas as pd
+import streamlit as st
+import pandas as pd
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
