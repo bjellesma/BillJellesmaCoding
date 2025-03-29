@@ -20,6 +20,8 @@ Let's create a streamlit that will display the weight vs deadlift of a sample of
 
 The GitHub repo is located [here](https://github.com/bjellesma/crossfit_streamlit/tree/main) if you want to look at the actual code.
 
+I've also pushed this app to [Streamlit Community Cloud](https://share.streamlit.io/)
+
 # TL;DR
 
 * Start with a basic streamlit app to read a large dataset from Kaggle
