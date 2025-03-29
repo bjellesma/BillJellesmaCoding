@@ -79,7 +79,7 @@ python_version = "3.10"
 dev = "streamlit run main.py --server.headless true"
 ```
 
-Now let's make app.py. For now, we'll just use `st.dataframe` to show the data from that CSV.
+Now let's make main.py. For now, we'll just use `st.dataframe` to show the data from that CSV.
 
 ```py
 import streamlit as st
@@ -103,11 +103,11 @@ Now let's add in some frontend engineering to spice things up a little.
 
 Now what we want to do is to add React code to show a scatter plot.
 
-First thing that we'll do is to make a folder structure for our app.
+First thing that we'll do is to improve upon the folder structure of our app in order to make room for our component.
 
 ```txt
 streamlit_app
-|--app.py 
+|--main.py 
 |--temp/
 |  |--data.csv
 |--.gitignore
@@ -133,9 +133,9 @@ node_modules
 
 This is because we plan to add a node_modules folder.
 
-## NPM
+## node package manager (npm)
 
-Now let's create a `package.json` in order to install frontend dependencies.
+npm may be a new concept for those coming from the streamlit and data science world. All that npm is is just a package manager that you can use to manage your JavaScript dependencies. It does this through a special file you create called `package.json`. npm even has a command that will help you to create this file so let's do that.
 
 ```bash
 cd components/crossfit_scatter_plot/frontend
@@ -144,7 +144,7 @@ npm init
 
 `npm init` is just an easy way to create the needed `package.json`. You'll be presented with a series of questions to get started with the file.
 
-```bash
+```text
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
@@ -217,7 +217,7 @@ Notice that a `package.json` will be created in your frontend directory. Hold ti
   },
 ```
 
-So `streamlit_component_lib` is one of the dependencies and this is at the heart of our application that will help serve the frontend react app that we're creating.
+Notice how `streamlit_component_lib` is one of the dependencies. This is at the heart of our application component that will help serve the frontend react app that we're creating and even connect it back to our streamlit app.
 
 You'll also want to update the scripts section. These scripts will provide the npm commands that we'll use to develop the component
 
@@ -292,7 +292,7 @@ This installation may take a couple of minutes but notice that this will create 
 
 Now we'll start adding files to fill in the folder structure that we provided earlier.
 
-**frontend/public/index.html**
+**crossfit_scatter_plot/frontend/public/index.html**
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -320,7 +320,7 @@ Now we'll start adding files to fill in the folder structure that we provided ea
 </html>
 ```
 
-For those familiar with frontend design, this is the base file that you'll need. It simply provides a root id which we'll connect to with our typescript.
+For those familiar with frontend frameworks (React, Vue, Angular), this is the base file that you'll need. It simply provides a root id which we'll connect to with our typescript.
 
 **crossfit_scatter_plot/frontend/.env**
 
@@ -372,7 +372,7 @@ While not strictly necessary, this file is nice to have for developers working i
 Unlike other files, the tsconfig is very important to have. The most important setting in here is the include command. This command will process any files in our `src/` directory ensuring that typescript is enforced whenever saving files.
 
 **crossfit_scatter_plot/frontend/src/index.tsx**
-```tsx
+```js
 import React from "react"
 import ReactDOM from "react-dom"
 import CrossfitScatterPlot from "./CrossfitScatterPlot"
@@ -387,12 +387,10 @@ ReactDOM.render(
 
 This file is the entry point for our React application. Notice that we're referencing the root ID. ReactDOM is instructed to bind its React tag to bind to an ID of root.
 
-Add the following to app.py
-
 Now, we'll create the custom component 
 
 **crossfit_scatter_plot/frontend/CrossfitScatterPlot.tsx**
-```tsx
+```js
 import {Streamlit, withStreamlitConnection,} from "streamlit-component-lib"
 import React, { useEffect } from "react"
 import Plot from "react-plotly.js"
@@ -466,7 +464,7 @@ Before we break it down, I do just want to point out that this is technically ty
 First we'll import the libraries. We'll import the streamlit custom lib code. We also want `useEffect` from React. This is used here so that we can immediately run code when the component mounts.
 Plotly maintains a custom `<Plot>` element that we can use. The reason that we're adding the import for `Data` and `Layout` from `plotly.js` is because we'll use these types in a typescript interface to enforce that we get the proper types from python.
 
-```tsx
+```js
 import {Streamlit, withStreamlitConnection,} from "streamlit-component-lib"
 import React, { useEffect } from "react"
 import Plot from "react-plotly.js"
@@ -475,7 +473,7 @@ import { Data, Layout } from "plotly.js";
 
 The next code that starts with the keyword `interface` is the typescript interface that we were discussing above to enforce that we get the expected data from python.
 
-```tsx
+```js
 // interface to enforce args
 interface Props {
   args: {
@@ -487,7 +485,7 @@ interface Props {
 
 This next line is how we declare a React Component. Notice that this uses the props interface that we created. `args` is defined to be the object that we've passed in from python. I say object because each argument that we've passed from python will be a property on that object. So `args.data` will be the data dictionary that we've passed from python to our component.
 
-```tsx
+```js
 const CrossfitScatterPlot: React.FC<Props> = ({args}) => {
   // code in here
 };
@@ -495,7 +493,7 @@ const CrossfitScatterPlot: React.FC<Props> = ({args}) => {
 
 Within the code block, we first find `useEffect`. This is a React feature that is used to detect when certain events occur such as a user performing an action so that our application can run code in response. In this case, the empty square brackets indicate that the code is to run when the component is first mounted and ready. We're using this so that we can tell streamlit to set the height of the component to 500 pixels.
 
-```tsx
+```js
 useEffect(() => {
     Streamlit.setFrameHeight(500)
   }, [])
@@ -505,13 +503,13 @@ We'll skip straight to the return value first and come back to our other section
 
 So the first thing to notice about our return value is that it follows the syntax of a shorthand if statement in JavaScript (and typescript). The code in the parentheses after the `?` executes if the code before the `?` is truthy meaning it's defined (not null or false). If the code is null or false, it'll execute the code after the `:`
 
-```tsx
+```js
 args.data && args.layout ? (do if true) : (do if false)
 ``` 
 
 So we can apply that knowledge to know that if both data and layout have been defined in the `args`, then we will execute the `<Plot>` element, otherwise we will show a div saying that we have no data. Remember earlier that we've imported `<Plot>` from Plotly. Like any Plotly figure, we'll need to specify a data and layout parameter. We're passing these from python. We can also specify a style attribute for an inline style with any applicable CSS. This is something that Streamlit natively does not support, so this is one nice feature of using components. There is the `config` attribute where we want to specify this figure as responsive to play nicely with users with different screen sizes (including on mobile). Lastly, we have an attribute call `onClick`. This is an extremely cool attribute! This is a JavaScript event where we can run a function whenever a user clicks on one of the markers. 
 
-```tsx
+```js
 return (
     <div style={{ width: '100%' }}>
       {args.data && args.layout ? (
