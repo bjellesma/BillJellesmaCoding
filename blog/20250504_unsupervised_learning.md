@@ -12,7 +12,10 @@ tags:
   - React
 ---
 
-In order to work with the Guassian below to create the anomaly detection algorithm, we'll define the following helper functions.
+In order to work with the Guassian below to create the anomaly detection algorithm, we'll define the following helper functions. You'll also need to download the following data files with all of the examples
+
+[X_train](https://githubusercontent.com/bjellesma/BillJellesmaCoding/master/static/X_part1.npy) - This data will be used to fit a Guassian distribution
+[X_val](https://githubusercontent.com/bjellesma/BillJellesmaCoding/master/static/X_part1.npy) and [y_val](https://githubusercontent.com/bjellesma/BillJellesmaCoding/master/static/X_part1.npy) are cross validation sets that will be used to select a threshold to determine anomalous data
 
 ```py
 import numpy as np
@@ -22,7 +25,7 @@ from utils import *
 %matplotlib inline
 
 def load_data():
-    X = np.load("data/X_part1.npy")
+    X = np.load("X_part1.npy")
     X_val = np.load("data/X_val_part1.npy")
     y_val = np.load("data/y_val_part1.npy")
     return X, X_val, y_val
@@ -72,6 +75,24 @@ def visualize_fit(X, mu, var):
     plt.xlabel('Latency (ms)')
 ```
 
+Firstly, let's just load the dataset and visualize where it falls on a scatter plot.
+
+```py
+plt.scatter(X_train[:, 0], X_train[:, 1], marker='x', c='b') 
+
+# Set the title
+plt.title("The first dataset")
+# Set the y-axis label
+plt.ylabel('Throughput (mb/s)')
+# Set the x-axis label
+plt.xlabel('Latency (ms)')
+# Set axis range
+plt.axis([0, 30, 0, 30])
+plt.show()
+```
+
+![Scatter Plot](image-1.png)
+
 To calculate the guassian, we can use the following for any 2d numpy array
 
 ```py
@@ -110,7 +131,7 @@ def estimate_gaussian(X):
     return mu, var
 ```
 
-Or we can use numpy's built in functions
+Or we can use numpy's built in functions to take advantage of numpy's vector operations to act on an entire array at once
 
 ```py
 def estimate_gaussian(X):
